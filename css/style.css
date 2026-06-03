@@ -1,1 +1,218 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#fff;
+color:#0f172a;
+line-height:1.6;
+}
+
+.container{
+width:min(1200px,92%);
+margin:auto;
+}
+
+.navbar{
+background:#fff;
+border-bottom:1px solid #e5e7eb;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.navbar .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:800;
+}
+
+nav{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+nav a{
+text-decoration:none;
+color:#334155;
+}
+
+.hero{
+padding:100px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.badge{
+background:#dbeafe;
+padding:8px 14px;
+border-radius:999px;
+font-size:.9rem;
+display:inline-block;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:4rem;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+margin-bottom:30px;
+color:#475569;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:12px 24px;
+border-radius:10px;
+text-decoration:none;
+border:none;
+cursor:pointer;
+font-weight:600;
+}
+
+.btn-primary{
+background:#2563eb;
+color:#fff;
+}
+
+.btn-secondary{
+border:2px solid #2563eb;
+color:#2563eb;
+}
+
+.stats-card{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.stat{
+background:#f8fafc;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.stat h3{
+font-size:2rem;
+}
+
+.section{
+padding:90px 0;
+}
+
+.gray{
+background:#f8fafc;
+}
+
+.section h2{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.featured{
+border:3px solid #2563eb;
+}
+
+.price{
+font-size:2rem;
+font-weight:800;
+margin:15px 0;
+}
+
+.brands{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:15px;
+}
+
+.brands div{
+background:#f8fafc;
+padding:20px;
+text-align:center;
+border-radius:12px;
+font-weight:600;
+}
+
+form{
+max-width:800px;
+margin:auto;
+display:grid;
+gap:15px;
+}
+
+input,
+select,
+textarea{
+padding:14px;
+border:1px solid #d1d5db;
+border-radius:10px;
+font-family:inherit;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:#0f172a;
+color:white;
+padding:35px 0;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+nav{
+display:none;
+}
+}
