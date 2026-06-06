@@ -1,233 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B2B Help | Order Management Solutions</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    B2B Help | Your Partner for Automated Marketplace Operations
+  </title>
+
+  <meta
+    name="description"
+    content="Marketplace order processing, SKU-wise sorting and bulk operations support for growing e-commerce businesses."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-<header class="navbar">
-  <div class="container">
-    <div class="logo">B2B Help</div>
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
 
-    <nav>
+<header class="navbar">
+
+  <div class="container navbar-container">
+
+    <div class="logo">
+
+      <span class="logo-icon">
+        B2B
+      </span>
+
+      <span class="logo-text">
+        Help
+      </span>
+
+    </div>
+
+    <nav class="desktop-nav">
+
+      <a href="#about">About</a>
+
       <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#demo">Demo</a>
+
+      <a href="#marketplaces">Marketplaces</a>
+
+      <a href="#workflow">Workflow</a>
+
       <a href="#contact">Contact</a>
 
-      <a href="https://your-login-url.com" target="_blank" class="btn btn-primary">
+    </nav>
+
+    <div class="nav-actions">
+
+      <a
+        href="#demo"
+        class="btn btn-outline"
+      >
+        Book Demo
+      </a>
+
+      <a
+        href="#"
+        class="btn btn-primary"
+      >
         Login
       </a>
-    </nav>
+
+    </div>
+
+    <button
+      class="mobile-menu-btn"
+      id="mobileMenuBtn"
+    >
+      ☰
+    </button>
+
   </div>
+
 </header>
 
-<section class="hero">
-  <div class="container hero-grid">
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
 
-    <div>
-      <span class="badge">Trusted B2B Operations Partner</span>
+<section class="hero">
+
+  <div class="hero-gradient"></div>
+
+  <div class="container hero-container">
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+
+        🚀 Currently Supporting Flipkart Marketplace
+
+      </div>
 
       <h1>
-        Simplify Order Processing.
-        Scale Your Business Faster.
+
+        Your Partner For
+        Automated Marketplace Operations
+
       </h1>
 
       <p>
-        Professional order management, SKU-wise label sorting,
-        and bulk order processing services for growing businesses.
+
+        B2B Help enables e-commerce sellers to
+        streamline order processing,
+        SKU-wise label sorting,
+        dispatch preparation,
+        and bulk order operations.
+
+        Currently supporting Flipkart sellers,
+        with Amazon, Meesho, Ajio and Snapdeal
+        integrations on the roadmap.
+
       </p>
 
       <div class="hero-buttons">
-        <a href="#demo" class="btn btn-primary">Book Free Demo</a>
-        <a href="https://your-login-url.com" target="_blank" class="btn btn-secondary">
-          Customer Login
+
+        <a
+          href="#demo"
+          class="btn btn-primary btn-large"
+        >
+          Book Free Consultation
         </a>
+
+        <a
+          href="#services"
+          class="btn btn-secondary btn-large"
+        >
+          Explore Services
+        </a>
+
       </div>
+
+      <div class="hero-trust">
+
+        <div>
+
+          <strong>99.8%</strong>
+          Processing Accuracy
+
+        </div>
+
+        <div>
+
+          <strong>24/7</strong>
+          Operational Support
+
+        </div>
+
+        <div>
+
+          <strong>Fast</strong>
+          Turnaround Time
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="stats-card">
-      <div class="stat">
-        <h3>99.8%</h3>
-        <p>Accuracy Rate</p>
+    <div class="hero-dashboard">
+
+      <div class="dashboard-card">
+
+        <div class="dashboard-header">
+
+          Operations Overview
+
+        </div>
+
+        <div class="dashboard-row">
+
+          <span>Orders Processed</span>
+          <strong>10,000+</strong>
+
+        </div>
+
+        <div class="dashboard-row">
+
+          <span>Marketplace</span>
+          <strong>Flipkart</strong>
+
+        </div>
+
+        <div class="dashboard-row">
+
+          <span>Accuracy</span>
+          <strong>99.8%</strong>
+
+        </div>
+
+        <div class="dashboard-row">
+
+          <span>Status</span>
+          <strong class="success">
+            Active
+          </strong>
+
+        </div>
+
       </div>
 
-      <div class="stat">
-        <h3>10K+</h3>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TRUST METRICS -->
+<!-- ========================= -->
+
+<section class="metrics">
+
+  <div class="container">
+
+    <div class="metrics-grid">
+
+      <div class="metric-box">
+
+        <h2 class="counter" data-target="10000">
+          0
+        </h2>
+
         <p>Orders Processed</p>
+
       </div>
 
-      <div class="stat">
-        <h3>24/7</h3>
-        <p>Support</p>
+      <div class="metric-box">
+
+        <h2 class="counter" data-target="99">
+          0
+        </h2>
+
+        <p>Processing Accuracy</p>
+
       </div>
 
-      <div class="stat">
-        <h3>Fast</h3>
-        <p>Turnaround</p>
-      </div>
-    </div>
+      <div class="metric-box">
 
-  </div>
-</section>
+        <h2 class="counter" data-target="1">
+          0
+        </h2>
 
-<section class="section">
-  <div class="container">
+        <p>Marketplace Live</p>
 
-    <h2>Marketplace Expertise</h2>
-
-    <div class="brands">
-      <div>Amazon</div>
-      <div>Flipkart</div>
-      <div>Meesho</div>
-      <div>Shopify</div>
-      <div>WooCommerce</div>
-      <div>Myntra</div>
-    </div>
-
-  </div>
-</section>
-
-<section id="services" class="section gray">
-  <div class="container">
-
-    <h2>Our Services</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Order Management</h3>
-        <p>
-          End-to-end processing and tracking of orders.
-        </p>
       </div>
 
-      <div class="card">
-        <h3>SKU Label Sorting</h3>
-        <p>
-          Accurate sorting and organization of SKU labels.
-        </p>
-      </div>
+      <div class="metric-box">
 
-      <div class="card">
-        <h3>Bulk Order Processing</h3>
-        <p>
-          Efficient handling of high-volume order operations.
-        </p>
+        <h2 class="counter" data-target="4">
+          0
+        </h2>
+
+        <p>Upcoming Integrations</p>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
-<section id="pricing" class="section">
+<!-- ========================= -->
+<!-- MARKETPLACE SECTION -->
+<!-- ========================= -->
+
+<section
+  id="marketplaces"
+  class="marketplaces section"
+>
+
   <div class="container">
 
-    <h2>Pricing Plans</h2>
+    <div class="section-heading">
 
-    <div class="cards">
+      <span>
+        Marketplace Ecosystem
+      </span>
 
-      <div class="card pricing-card">
-        <h3>Starter</h3>
-        <div class="price">₹4,999</div>
-        <p>/month</p>
+      <h2>
+        Current & Future Integrations
+      </h2>
+
+    </div>
+
+    <div class="marketplace-grid">
+
+      <div class="market-card active">
+
+        <h3>
+          Currently Active
+        </h3>
 
         <ul>
-          <li>Up to 1,000 Orders</li>
-          <li>Email Support</li>
-          <li>Basic Reporting</li>
+
+          <li>
+            ✅ Flipkart
+          </li>
+
         </ul>
+
       </div>
 
-      <div class="card pricing-card featured">
-        <h3>Growth</h3>
-        <div class="price">₹9,999</div>
-        <p>/month</p>
+      <div class="market-card roadmap">
+
+        <h3>
+          Integration Roadmap
+        </h3>
 
         <ul>
-          <li>Up to 5,000 Orders</li>
-          <li>SKU Sorting</li>
-          <li>Priority Support</li>
-          <li>Bulk Orders</li>
-        </ul>
-      </div>
 
-      <div class="card pricing-card">
-        <h3>Enterprise</h3>
-        <div class="price">Custom</div>
+          <li>
+            🚀 Amazon
+          </li>
 
-        <ul>
-          <li>Unlimited Orders</li>
-          <li>Dedicated Manager</li>
-          <li>Custom Workflow</li>
-          <li>SLA Support</li>
+          <li>
+            🚀 Meesho
+          </li>
+
+          <li>
+            🚀 Ajio
+          </li>
+
+          <li>
+            🚀 Snapdeal
+          </li>
+
         </ul>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
-<section id="demo" class="section gray">
-  <div class="container">
+<!-- ========================= -->
+<!-- ABOUT -->
+<!-- ========================= -->
 
-    <h2>Book a Free Demo</h2>
+<section
+  id="about"
+  class="about section"
+>
 
-    <form id="demoForm">
+  <div class="container about-grid">
 
-      <input type="text" placeholder="Full Name" required>
-      <input type="text" placeholder="Company Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="tel" placeholder="Phone Number" required>
+    <div>
 
-      <select required>
-        <option value="">Monthly Orders</option>
-        <option>0-1000</option>
-        <option>1000-5000</option>
-        <option>5000+</option>
-      </select>
+      <span class="section-tag">
+        About B2B Help
+      </span>
 
-      <textarea rows="5" placeholder="Requirements"></textarea>
+      <h2>
 
-      <button class="btn btn-primary" type="submit">
-        Schedule Demo
-      </button>
+        Simplifying Marketplace Operations
+        For Growing Businesses
 
-    </form>
+      </h2>
 
-  </div>
-</section>
+      <p>
 
-<section id="contact" class="section">
-  <div class="container">
+        Founded in 2026 and based in Jaipur,
+        B2B Help helps e-commerce businesses
+        manage operational workflows with
+        speed, accuracy and consistency.
 
-    <h2>Contact Us</h2>
+      </p>
 
-    <div class="contact">
-      <p>Email: info@b2bhelp.com</p>
-      <p>Phone: +91 XXXXX XXXXX</p>
+      <p>
+
+        Our goal is to eliminate manual effort,
+        reduce processing errors,
+        and create scalable systems
+        for marketplace sellers.
+
+      </p>
+
+    </div>
+
+    <div class="about-card">
+
+      <h3>
+        Our Mission
+      </h3>
+
+      <p>
+
+        To become India's most trusted
+        marketplace operations partner.
+
+      </p>
+
     </div>
 
   </div>
+
 </section>
 
-<footer>
+<!-- ========================= -->
+<!-- PROBLEMS -->
+<!-- ========================= -->
+
+<section class="problems section">
+
   <div class="container">
-    © 2026 B2B Help. All Rights Reserved.
+
+    <div class="section-heading">
+
+      <span>
+        Challenges We Solve
+      </span>
+
+      <h2>
+        Common Marketplace Pain Points
+      </h2>
+
+    </div>
+
+    <div class="problem-grid">
+
+      <div class="problem-card">
+        Manual Order Processing
+      </div>
+
+      <div class="problem-card">
+        Dispatch Delays
+      </div>
+
+      <div class="problem-card">
+        SKU Sorting Errors
+      </div>
+
+      <div class="problem-card">
+        Bulk Order Complexity
+      </div>
+
+    </div>
+
   </div>
-</footer>
 
-<script src="js/main.js"></script>
+</section>
 
-</body>
-</html>
+<!-- ========================= -->
+<!-- SERVICES -->
+<!-- ========================= -->
+
+<section
+  id="services"
+  class="services section"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span>
+        Our Services
+      </span>
+
+      <h2>
+        Operational Excellence At Scale
+      </h2>
+
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+
+        <h3>
+          Order Processing
+        </h3>
+
+        <p>
+
+          Efficient handling and processing
+          of marketplace orders.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <h3>
+          SKU Label Sorting
+        </h3>
+
+        <p>
+
+          Organized and accurate
+          SKU-wise workflow management.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <h3>
+          Bulk Order Operations
+        </h3>
+
+        <p>
+
+          Handle large order volumes
+          with confidence.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <h3>
+          Dispatch Preparation
+        </h3>
+
+        <p>
+
+          Ready-to-ship workflows
+          optimized for speed.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- WORKFLOW -->
+<!-- ========================= -->
+
+<section
+  id="workflow"
+  class="workflow section"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span>
+        Workflow
+      </span>
+
+      <h2>
+        How We Process Orders
+      </h2>
+
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        Order Received
+      </div>
+
+      <div class="timeline-item">
+        Verification
+      </div>
+
+      <div class="timeline-item">
+        SKU Sorting
+      </div>
+
+      <div class="timeline-item">
+        Quality Check
+      </div>
+
+      <div class="timeline-item">
+        Dispatch Ready
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- WHY CHOOSE US -->
+<!-- ========================= -->
+
+<section class="why-us section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span>
+        Why Choose Us
+      </span>
+
+      <h2>
+        Built For Marketplace Growth
+      </h2>
+
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        Marketplace Expertise
+      </div>
+
+      <div class="why-card">
+        Dedicated Support
+      </div>
+
+      <div class="why-card">
+        Fast Turnaround
+      </div>
+
+      <div class="why-card">
+        High Accuracy
+      </div>
+
+      <div class="why-card">
+        Scalable Operations
+      </div>
+
+      <div class="why-card">
+        Future Integrations
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
