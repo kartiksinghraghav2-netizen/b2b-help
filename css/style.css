@@ -1068,3 +1068,162 @@ img{
   gap:20px;
   box-shadow:0 20px 40px rgba(0,0,0,.1);
 }
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 1200px){
+
+  .hero h1{
+    font-size:3.8rem;
+  }
+
+  .hero-container{
+    gap:40px;
+  }
+
+}
+
+@media screen and (max-width: 992px){
+
+  .hero-container,
+  .about-grid,
+  .marketplace-grid,
+  .services-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:140px;
+  }
+
+  .hero-dashboard{
+    margin-top:40px;
+  }
+
+  .metrics-grid,
+  .problem-grid,
+  .why-grid,
+  .industry-grid,
+  .case-grid,
+  .testimonial-grid,
+  .pricing-grid,
+  .contact-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .container{
+    width:95%;
+  }
+
+  .section{
+    padding:70px 0;
+  }
+
+  .desktop-nav,
+  .nav-actions{
+    display:none;
+  }
+
+  .mobile-menu-btn{
+    display:block;
+    font-size:28px;
+    background:none;
+    border:none;
+    cursor:pointer;
+  }
+
+  .navbar-container{
+    height:70px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:120px 0 60px;
+  }
+
+  .hero h1{
+    font-size:2.5rem;
+    line-height:1.2;
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero-trust{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .dashboard-card{
+    padding:25px;
+  }
+
+  .metrics-grid,
+  .problem-grid,
+  .why-grid,
+  .industry-grid,
+  .case-grid,
+  .testimonial-grid,
+  .pricing-grid,
+  .contact-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-heading h2{
+    font-size:2rem;
+  }
+
+  .about h2{
+    font-size:2rem;
+  }
+
+  .price{
+    font-size:2.2rem;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+  .hero h1{
+    font-size:2rem;
+  }
+
+  .hero-badge{
+    font-size:.8rem;
+  }
+
+  .metric-box h2{
+    font-size:2rem;
+  }
+
+  .dashboard-header{
+    font-size:1.2rem;
+  }
+
+  .btn{
+    padding:12px 20px;
+  }
+
+}
