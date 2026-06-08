@@ -213,9 +213,10 @@ img{
 }
 
 .hero h1{
-  font-size:4.5rem;
+  font-size:clamp(2.5rem,4vw,4.2rem);
   line-height:1.1;
   margin-bottom:25px;
+  max-width:650px;
 }
 
 .hero p{
@@ -276,7 +277,8 @@ img{
 }
 
 .metrics{
-  margin-top:-80px;
+  margin-top:0;
+  padding-top:50px;
   position:relative;
   z-index:10;
 }
