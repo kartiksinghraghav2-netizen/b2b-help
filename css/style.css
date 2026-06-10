@@ -80,7 +80,10 @@ img{
 }
 
 .navbar-container{
-  height: 110px;
+  height:110px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
 .logo{
@@ -89,12 +92,10 @@ img{
   text-decoration:none;
 }
 .logo-img{
-  height:95px;
+  height:90px;
   width:auto;
   display:block;
-  transition:.3s ease;
 }
-
 .logo-img:hover{
   transform:scale(1.03);
 }
@@ -1010,57 +1011,6 @@ img{
   .featured{
     transform:none;
   }
-}
-@media(max-width:768px){
-
-  .logo-img{
-    height:70px;
-  }
-
-  .navbar-container{
-    height:85px;
-  }
-
-}
-  .section-heading h2{
-    font-size:2.2rem;
-  }
-
-  .hero h1{
-    font-size:2.8rem;
-  }
-
-  .hero-container{
-    grid-template-columns:1fr;
-  }
-
-  .metrics-grid{
-    grid-template-columns:1fr;
-  }
-
-  .desktop-nav{
-    display:none;
-  }
-
-  .mobile-menu-btn{
-    display:block;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-}
-.mobile-open{
-  display:flex !important;
-  flex-direction:column;
-  position:absolute;
-  top:85px;
-  left:0;
-  width:100%;
-  background:white;
-  padding:25px;
-  gap:20px;
-  box-shadow:0 20px 40px rgba(0,0,0,.1);
 }
 /* =========================================
    RESPONSIVE DESIGN
