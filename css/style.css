@@ -152,6 +152,12 @@ img{
 
 .mobile-menu-btn{
   display:none;
+  background:none;
+  border:none;
+  font-size:28px;
+  cursor:pointer;
+  color:#0f172a;
+}
 }
 
 .hero{
@@ -1190,15 +1196,21 @@ img{
   color:#0f172a;
 }
 
+
+  /* MOBILE NAV FIX */
+
 @media screen and (max-width:768px){
 
-  .desktop-nav,
+  .desktop-nav{
+    display:none !important;
+  }
+
   .nav-actions{
-    display:none;
+    display:none !important;
   }
 
   .mobile-menu-btn{
-    display:block;
+    display:block !important;
   }
 
   .navbar-container{
@@ -1206,7 +1218,9 @@ img{
   }
 
   .logo-img{
-    height:55px;
+    height:50px;
   }
+
+}
 
 }
