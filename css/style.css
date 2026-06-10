@@ -80,7 +80,7 @@ img{
 }
 
 .navbar-container{
-  height:90px;
+  height:80px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -92,7 +92,7 @@ img{
   text-decoration:none;
 }
 .logo-img{
-  height:120px;
+  height:115px;
   width:auto;
   display:block;
 }
