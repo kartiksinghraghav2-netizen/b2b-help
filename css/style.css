@@ -80,10 +80,7 @@ img{
 }
 
 .navbar-container{
-  height:85px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  height: 110px;
 }
 
 .logo{
@@ -92,14 +89,14 @@ img{
   text-decoration:none;
 }
 .logo-img{
-  height:60px;
+  height:95px;
   width:auto;
   display:block;
   transition:.3s ease;
 }
 
 .logo-img:hover{
-  transform:scale(1.05);
+  transform:scale(1.03);
 }
 .desktop-nav{
   display:flex;
@@ -1014,13 +1011,17 @@ img{
     transform:none;
   }
 }
-
 @media(max-width:768px){
 
-  .section{
-    padding:80px 0;
+  .logo-img{
+    height:70px;
   }
 
+  .navbar-container{
+    height:85px;
+  }
+
+}
   .section-heading h2{
     font-size:2.2rem;
   }
@@ -1134,9 +1135,12 @@ img{
     cursor:pointer;
   }
 
-  .navbar-container{
-    height:70px;
-  }
+ .navbar-container{
+  height:110px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
 
   .hero{
     min-height:auto;
