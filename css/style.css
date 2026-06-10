@@ -1181,3 +1181,32 @@ img{
   }
 
 }
+.mobile-menu-btn{
+  display:none;
+  background:none;
+  border:none;
+  font-size:32px;
+  cursor:pointer;
+  color:#0f172a;
+}
+
+@media screen and (max-width:768px){
+
+  .desktop-nav,
+  .nav-actions{
+    display:none;
+  }
+
+  .mobile-menu-btn{
+    display:block;
+  }
+
+  .navbar-container{
+    height:80px;
+  }
+
+  .logo-img{
+    height:55px;
+  }
+
+}
