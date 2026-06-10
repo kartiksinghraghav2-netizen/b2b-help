@@ -1220,3 +1220,37 @@ img{
   }
 
 }
+.mobile-menu{
+  position:fixed;
+  top:80px;
+  left:0;
+  width:100%;
+  background:#fff;
+  display:none;
+  flex-direction:column;
+  padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+  z-index:999;
+}
+
+.mobile-menu.active{
+  display:flex;
+}
+
+.mobile-menu a{
+  padding:14px 0;
+  color:#0f172a;
+  font-weight:600;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.mobile-menu .btn{
+  margin-top:10px;
+  text-align:center;
+}
+
+@media(min-width:769px){
+  .mobile-menu{
+    display:none !important;
+  }
+}
