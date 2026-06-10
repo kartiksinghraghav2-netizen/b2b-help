@@ -89,27 +89,18 @@ img{
 .logo{
   display:flex;
   align-items:center;
-  gap:10px;
+  text-decoration:none;
+}
+.logo-img{
+  height:60px;
+  width:auto;
+  display:block;
+  transition:.3s ease;
 }
 
-.logo-icon{
-  background:var(--primary);
-  color:white;
-  width:42px;
-  height:42px;
-  border-radius:12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:800;
+.logo-img:hover{
+  transform:scale(1.05);
 }
-
-.logo-text{
-  font-size:1.3rem;
-  font-weight:800;
-  color:var(--secondary);
-}
-
 .desktop-nav{
   display:flex;
   gap:30px;
