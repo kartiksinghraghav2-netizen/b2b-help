@@ -156,7 +156,8 @@ img{
 
 .hero{
   position:relative;
-  min-height:100vh;
+  min-height:auto;
+  padding:140px 0 60px;
   display:flex;
   align-items:center;
   overflow:hidden;
@@ -1093,10 +1094,16 @@ img{
 }
 
   .hero{
-    min-height:auto;
-    padding:120px 0 60px;
-  }
+  min-height:auto;
+  padding:120px 0 30px;
+}
+.hero-container{
+  gap:30px;
+}
 
+.metrics{
+  padding-top:20px;
+}
   .hero h1{
     font-size:2.5rem;
     line-height:1.2;
