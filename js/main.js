@@ -264,13 +264,8 @@ document.getElementById("mobileMenu");
 
 if (mobileMenuBtn && mobileMenu) {
 
-  mobileMenuBtn.addEventListener(
-    "click",
-    () => {
-      mobileMenu.classList.toggle(
-        "active"
-      );
-    }
-  );
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
 
 }
