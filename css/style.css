@@ -89,7 +89,8 @@ img{
 .logo{
   display:flex;
   align-items:center;
-  text-decoration:none;
+  margin:0;
+  padding:0;
 }
 .logo-img{
   height:115px;
@@ -149,12 +150,15 @@ img{
 .btn-large{
   padding:18px 32px;
 }
-
 .mobile-menu-btn{
   display:none;
   background:none;
   border:none;
-  font-size:28px;
+  font-size:32px;
+  font-weight:700;
+  line-height:1;
+  padding:0;
+  margin:0;
   cursor:pointer;
   color:#0f172a;
 }
@@ -647,16 +651,17 @@ img{
   }
 
   .navbar-container{
-    height:70px !important;
+    height:75px !important;
     padding:0 16px;
     display:flex;
     align-items:center;
     justify-content:space-between;
   }
-
+}
   .logo-img{
     height:65px !important;
     width:auto;
+    display:block;
   }
 
   .mobile-menu-btn{
