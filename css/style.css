@@ -646,24 +646,30 @@ img{
 
 @media (max-width:768px){
 
-  .navbar{
-    height:70px;
-  }
-
   .navbar-container{
-    height:75px !important;
-    padding:0 16px;
+    height:70px !important;
+    padding:0 15px;
     display:flex;
     align-items:center;
     justify-content:space-between;
   }
-}
+
+  .logo{
+    margin:0;
+    padding:0;
+  }
+
   .logo-img{
-    height:65px !important;
+    height:70px !important;
     width:auto;
     display:block;
   }
 
+}
+.logo{
+  display:flex;
+  align-items:center;
+}
   .mobile-menu-btn{
     font-size:34px;
     color:#0f172a;
