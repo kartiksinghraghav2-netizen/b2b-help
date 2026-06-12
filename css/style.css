@@ -642,20 +642,31 @@ img{
 
 @media (max-width:768px){
 
-  .problem-grid,
-  .why-grid{
-    grid-template-columns:1fr;
+  .navbar{
+    height:70px;
   }
 
-  .about h2{
-    font-size:2.2rem;
+  .navbar-container{
+    height:70px !important;
+    padding:0 16px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
   }
 
-  .market-card,
-  .service-card,
-  .about-card{
-    padding:30px;
+  .logo-img{
+    height:65px !important;
+    width:auto;
   }
+
+  .mobile-menu-btn{
+    font-size:34px;
+    color:#0f172a;
+    display:block !important;
+    background:none;
+    border:none;
+  }
+
 }
 /* =========================================
    INDUSTRY SOLUTIONS
