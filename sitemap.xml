@@ -2,7 +2,25 @@
 
 <urlset
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://b2bhelp.in/about.html</loc>
+</url>
 
+<url>
+<loc>https://b2bhelp.in/contact.html</loc>
+</url>
+
+<url>
+<loc>https://b2bhelp.in/services/flipkart-order-processing.html</loc>
+</url>
+
+<url>
+<loc>https://b2bhelp.in/services/sku-sorting.html</loc>
+</url>
+
+<url>
+<loc>https://b2bhelp.in/services/bulk-order-management.html</loc>
+</url>
 <url>
 <loc>https://b2bhelp.in/</loc>
 <priority>1.0</priority>
