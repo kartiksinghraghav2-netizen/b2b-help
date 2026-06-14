@@ -1276,3 +1276,55 @@ img{
     display:none !important;
   }
 }
+/* =========================================
+   WHATSAPP FLOAT BUTTON
+========================================= */
+
+.whatsapp-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  width:65px;
+  height:65px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+  z-index:9999;
+  animation:whatsappPulse 2s infinite;
+}
+
+.whatsapp-float img{
+  width:34px;
+  height:34px;
+  filter:brightness(0) invert(1);
+}
+
+@keyframes whatsappPulse{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .whatsapp-float{
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+  }
+
+}
