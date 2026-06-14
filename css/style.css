@@ -475,8 +475,9 @@ img{
   color:var(--secondary);
 }
 
-.service-card p{
-  line-height:1.8;
+.service-card .btn{
+  margin-top:20px;
+  display:inline-block;
 }
 
 /* =========================================
