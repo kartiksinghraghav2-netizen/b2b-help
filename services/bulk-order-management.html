@@ -16,12 +16,12 @@ Bulk Order Management Services | B2B Help
 
 <meta
 name="description"
-content="Professional Bulk Order Management Services by B2B Help. Streamline high-volume ecommerce operations, dispatch workflows and marketplace fulfillment."
+content="Professional Bulk Order Management Services for ecommerce sellers. Handle high-volume orders efficiently with B2B Help."
 >
 
 <meta
 name="keywords"
-content="bulk order management, ecommerce operations, Flipkart seller support, order processing, fulfillment services"
+content="Flipkart order processing, Flipkart seller support, SKU sorting, ecommerce operations"
 >
 
 <meta
@@ -31,7 +31,7 @@ content="index,follow"
 
 <link
 rel="canonical"
-href="https://b2bhelp.in/services/bulk-order-management.html"
+href="https://b2bhelp.in/services/flipkart-order-processing.html"
 >
 
 <link
@@ -49,21 +49,261 @@ href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;80
 rel="stylesheet"
 >
 
+<style>
+
+/* =======================
+PAGE SPECIFIC CSS
+======================= */
+
+body{
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+}
+
+.service-navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:9999;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.service-navbar-container{
+height:85px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.service-logo img{
+height:72px;
+}
+
+.desktop-nav{
+display:flex;
+gap:30px;
+align-items:center;
+}
+
+.desktop-nav a{
+font-weight:600;
+color:#0f172a;
+}
+
+.login-btn{
+background:#2563eb;
+color:white !important;
+padding:12px 24px;
+border-radius:12px;
+}
+
+.mobile-menu-btn{
+display:none;
+font-size:34px;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+.mobile-menu{
+display:none;
+position:absolute;
+top:85px;
+left:0;
+width:100%;
+background:white;
+padding:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.mobile-menu a{
+display:block;
+padding:14px 0;
+font-weight:600;
+color:#0f172a;
+}
+
+.mobile-menu.active{
+display:block;
+}
+
+/* HERO */
+
+.hero-service{
+padding:190px 0 130px;
+background:
+linear-gradient(
+135deg,
+#020617,
+#0f172a,
+#1e3a8a
+);
+
+position:relative;
+overflow:hidden;
+}
+
+.hero-service::before{
+content:"";
+position:absolute;
+width:800px;
+height:800px;
+background:#2563eb;
+border-radius:50%;
+filter:blur(200px);
+opacity:.20;
+top:-250px;
+right:-150px;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero-badge{
+display:inline-block;
+padding:12px 18px;
+border-radius:999px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+color:white;
+margin-bottom:25px;
+}
+
+.hero-service h1{
+font-size:clamp(3rem,6vw,5.5rem);
+line-height:1.05;
+color:white;
+max-width:900px;
+margin-bottom:25px;
+}
+
+.hero-service p{
+max-width:850px;
+font-size:1.15rem;
+line-height:1.9;
+color:#cbd5e1;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.btn-white{
+background:white;
+color:#0f172a;
+padding:16px 28px;
+border-radius:14px;
+font-weight:700;
+}
+
+.btn-outline-white{
+border:1px solid rgba(255,255,255,.2);
+padding:16px 28px;
+border-radius:14px;
+color:white;
+font-weight:700;
+}
+
+/* TRUST BAR */
+
+.trust-strip{
+margin-top:-70px;
+position:relative;
+z-index:50;
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.trust-card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.trust-card h3{
+font-size:3rem;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.trust-card p{
+font-weight:600;
+color:#475569;
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.desktop-nav{
+display:none;
+}
+
+.mobile-menu-btn{
+display:block;
+}
+
+.hero-service{
+padding:150px 0 90px;
+}
+
+.hero-service h1{
+font-size:2.5rem;
+}
+
+.trust-grid{
+grid-template-columns:1fr;
+}
+
+.service-logo img{
+height:60px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
+
+<!-- =======================
+NAVBAR
+======================= -->
 
 <header class="service-navbar">
 
 <div class="container service-navbar-container">
 
-<a href="../index.html" class="service-logo">
-
+<a
+href="../index.html"
+class="service-logo"
+>
 <img
 src="../assets/logo.png"
 alt="B2B Help"
 >
-
 </a>
 
 <nav class="desktop-nav">
@@ -103,14 +343,29 @@ class="mobile-menu"
 id="mobileMenu"
 >
 
-<a href="../index.html">🏠 Home</a>
-<a href="../index.html#services">📦 Services</a>
-<a href="../index.html#contact">📞 Contact</a>
-<a href="https://b2bhelp.in/login">🔐 Login</a>
+<a href="../index.html">
+🏠 Home
+</a>
+
+<a href="../index.html#services">
+📦 Services
+</a>
+
+<a href="../index.html#contact">
+📞 Contact
+</a>
+
+<a href="https://b2bhelp.in/login">
+🔐 Login
+</a>
 
 </div>
 
 </header>
+
+<!-- =======================
+HERO
+======================= -->
 
 <section class="hero-service">
 
@@ -118,14 +373,14 @@ id="mobileMenu"
 
 <span class="hero-badge">
 
-📦 High Volume Ecommerce Operations
+🚀 Professional Bulk Order Operations
 
 </span>
 
 <h1>
 
 Professional
-Bulk Order Management
+Flipkart Order Processing
 Services
 
 </h1>
@@ -133,11 +388,11 @@ Services
 <p>
 
 B2B Help provides professional Bulk Order Management
-services for ecommerce businesses handling high order volumes.
+services for ecommerce sellers handling high order volumes.
 
-Our structured workflows help businesses improve
-efficiency, reduce operational bottlenecks and scale
-marketplace operations confidently.
+Our structured workflows improve operational efficiency,
+reduce bottlenecks and ensure smooth order fulfillment
+during peak sales periods.
 
 </p>
 
@@ -163,6 +418,10 @@ Customer Login
 
 </section>
 
+<!-- =======================
+TRUST STATS
+======================= -->
+
 <section class="trust-strip">
 
 <div class="container">
@@ -174,7 +433,7 @@ Customer Login
 <h3>10K+</h3>
 
 <p>
-Orders Managed
+Orders Processed
 </p>
 
 </div>
@@ -214,6 +473,9 @@ Rajasthan Based Team
 </div>
 
 </section>
+<!-- =======================
+PROBLEMS SECTION
+======================= -->
 
 <section class="section">
 
@@ -226,11 +488,11 @@ Seller Challenges
 </span>
 
 <h2>
-Challenges Of Managing Large Order Volumes
+Common Problems Faced By Flipkart Sellers
 </h2>
 
 <p>
-As ecommerce businesses grow, handling large volumes of orders efficiently becomes increasingly difficult.
+As order volume grows, managing operations manually becomes difficult. These challenges often slow down business growth.
 </p>
 
 </div>
@@ -238,33 +500,75 @@ As ecommerce businesses grow, handling large volumes of orders efficiently becom
 <div class="feature-grid">
 
 <div class="feature-card">
-<h3>📦 High Order Volume</h3>
-<p>Large daily order counts require structured operational workflows.</p>
+
+<h3>
+⏰ Late Order Processing
+</h3>
+
+<p>
+Delays in processing orders can impact customer satisfaction and seller performance metrics.
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>⚡ Peak Sale Pressure</h3>
-<p>Festive sales and campaigns create operational overload.</p>
+
+<h3>
+🏷 SKU Sorting Errors
+</h3>
+
+<p>
+Incorrect SKU handling leads to dispatch mistakes, returns and operational losses.
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>🚚 Dispatch Delays</h3>
-<p>Large order queues often delay shipment preparation.</p>
+
+<h3>
+📦 Bulk Order Pressure
+</h3>
+
+<p>
+Handling hundreds of orders daily without a structured process becomes difficult.
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>🏭 Warehouse Bottlenecks</h3>
-<p>Manual processes reduce warehouse productivity.</p>
+
+<h3>
+📉 Operational Bottlenecks
+</h3>
+
+<p>
+Manual workflows slow down fulfillment and increase processing costs.
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>📊 Inventory Coordination</h3>
-<p>Managing inventory becomes more complex as orders increase.</p>
+
+<h3>
+🚚 Dispatch Delays
+</h3>
+
+<p>
+Poor coordination affects shipment preparation and marketplace performance.
+</p>
+
 </div>
 
 <div class="feature-card">
-<h3>📈 Scaling Challenges</h3>
-<p>Businesses struggle to expand without organized systems.</p>
+
+<h3>
+📊 Lack Of Scalability
+</h3>
+
+<p>
+Businesses struggle to scale operations without organized systems.
+</p>
+
 </div>
 
 </div>
@@ -272,6 +576,7 @@ As ecommerce businesses grow, handling large volumes of orders efficiently becom
 </div>
 
 </section>
+
 <!-- =======================
 WHY B2B HELP
 ======================= -->
@@ -290,12 +595,8 @@ Why Choose Us
 </span>
 
 <h2>
-Built For High-Volume Ecommerce Operations
+Built For Marketplace Growth
 </h2>
-
-<p>
-Our bulk order workflows are designed to improve speed, accuracy and scalability for growing ecommerce businesses.
-</p>
 
 </div>
 
@@ -304,11 +605,11 @@ Our bulk order workflows are designed to improve speed, accuracy and scalability
 <div class="feature-card">
 
 <h3>
-⚡ Faster Processing
+⚡ Fast Processing
 </h3>
 
 <p>
-Handle large order volumes quickly without sacrificing quality.
+Orders are processed through structured workflows that improve speed and efficiency.
 </p>
 
 </div>
@@ -316,11 +617,11 @@ Handle large order volumes quickly without sacrificing quality.
 <div class="feature-card">
 
 <h3>
-🎯 Higher Accuracy
+🎯 Accuracy Focused
 </h3>
 
 <p>
-Structured verification processes reduce operational mistakes.
+Every step is designed to minimize operational mistakes and improve consistency.
 </p>
 
 </div>
@@ -328,11 +629,11 @@ Structured verification processes reduce operational mistakes.
 <div class="feature-card">
 
 <h3>
-📦 Bulk Order Expertise
+📦 Bulk Order Ready
 </h3>
 
 <p>
-Designed specifically for businesses processing hundreds of orders daily.
+We help sellers manage high order volumes confidently.
 </p>
 
 </div>
@@ -340,11 +641,11 @@ Designed specifically for businesses processing hundreds of orders daily.
 <div class="feature-card">
 
 <h3>
-🚚 Dispatch Optimization
+🏷 SKU-Based Workflow
 </h3>
 
 <p>
-Improve shipment preparation and fulfillment efficiency.
+Organized SKU sorting improves warehouse and fulfillment efficiency.
 </p>
 
 </div>
@@ -352,11 +653,11 @@ Improve shipment preparation and fulfillment efficiency.
 <div class="feature-card">
 
 <h3>
-📈 Scalable Systems
+📈 Growth Support
 </h3>
 
 <p>
-Build operational foundations that support long-term growth.
+Scalable systems help businesses prepare for future expansion.
 </p>
 
 </div>
@@ -368,7 +669,7 @@ Build operational foundations that support long-term growth.
 </h3>
 
 <p>
-Work with a team focused on ecommerce operational excellence.
+Our team works closely with businesses to improve operational performance.
 </p>
 
 </div>
@@ -394,7 +695,7 @@ Services Included
 </span>
 
 <h2>
-Complete Bulk Order Management Support
+Complete Flipkart Operations Support
 </h2>
 
 </div>
@@ -404,11 +705,11 @@ Complete Bulk Order Management Support
 <div class="feature-card">
 
 <h3>
-📦 Bulk Order Processing
+📋 Order Verification
 </h3>
 
 <p>
-Efficient handling of large marketplace order volumes.
+Verify and organize marketplace orders accurately before processing.
 </p>
 
 </div>
@@ -416,11 +717,11 @@ Efficient handling of large marketplace order volumes.
 <div class="feature-card">
 
 <h3>
-📋 Volume Planning
+🏷 SKU Label Sorting
 </h3>
 
 <p>
-Prepare workflows for peak sales and high-demand periods.
+SKU-wise sorting improves inventory management and dispatch efficiency.
 </p>
 
 </div>
@@ -428,11 +729,11 @@ Prepare workflows for peak sales and high-demand periods.
 <div class="feature-card">
 
 <h3>
-🏷 SKU Coordination
+📦 Bulk Order Management
 </h3>
 
 <p>
-Organize products accurately for efficient fulfillment.
+Efficiently handle large order volumes during sales and growth periods.
 </p>
 
 </div>
@@ -440,23 +741,11 @@ Organize products accurately for efficient fulfillment.
 <div class="feature-card">
 
 <h3>
-🚚 Dispatch Management
+🚚 Dispatch Preparation
 </h3>
 
 <p>
-Prepare and organize shipments for timely dispatch.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>
-✅ Quality Control
-</h3>
-
-<p>
-Verification checks maintain operational accuracy.
+Prepare shipments quickly and accurately for marketplace fulfillment.
 </p>
 
 </div>
@@ -468,7 +757,19 @@ Verification checks maintain operational accuracy.
 </h3>
 
 <p>
-Track workflow efficiency and performance.
+Track workflow quality and maintain consistency across operations.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+📈 Marketplace Growth Support
+</h3>
+
+<p>
+Support sellers with scalable operational systems designed for growth.
 </p>
 
 </div>
@@ -505,18 +806,18 @@ Our Workflow
 </span>
 
 <h2 style="color:white;">
-How We Manage Bulk Orders
+How We Process Flipkart Orders
 </h2>
 
 </div>
 
 <div
-class="timeline-grid"
 style="
 display:grid;
 grid-template-columns:repeat(5,1fr);
 gap:20px;
 "
+class="timeline-grid"
 >
 
 <div
@@ -531,7 +832,7 @@ text-align:center;
 <h3>1</h3>
 
 <p>
-Order Collection
+Order Download
 </p>
 
 </div>
@@ -548,7 +849,7 @@ text-align:center;
 <h3>2</h3>
 
 <p>
-Volume Planning
+SKU Sorting
 </p>
 
 </div>
@@ -565,7 +866,7 @@ text-align:center;
 <h3>3</h3>
 
 <p>
-Sorting Process
+Verification
 </p>
 
 </div>
@@ -582,7 +883,7 @@ text-align:center;
 <h3>4</h3>
 
 <p>
-Packing & Verification
+Dispatch Preparation
 </p>
 
 </div>
@@ -599,7 +900,7 @@ text-align:center;
 <h3>5</h3>
 
 <p>
-Dispatch Ready
+Ready To Ship
 </p>
 
 </div>
@@ -609,110 +910,6 @@ Dispatch Ready
 </div>
 
 </section>
-
-<!-- =======================
-BENEFITS
-======================= -->
-
-<section
-class="section"
-style="background:#f8fafc;"
->
-
-<div class="container">
-
-<div class="section-heading">
-
-<span>
-Business Benefits
-</span>
-
-<h2>
-Benefits Of Professional Bulk Order Management
-</h2>
-
-</div>
-
-<div class="feature-grid">
-
-<div class="feature-card">
-
-<h3>
-📈 Improved Scalability
-</h3>
-
-<p>
-Support business growth with organized operational systems.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>
-⚡ Faster Fulfillment
-</h3>
-
-<p>
-Reduce processing delays and improve shipment readiness.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>
-🎯 Better Accuracy
-</h3>
-
-<p>
-Minimize errors during high-volume operations.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>
-📦 Peak Season Ready
-</h3>
-
-<p>
-Handle festive sales and promotional spikes confidently.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>
-💰 Operational Efficiency
-</h3>
-
-<p>
-Reduce bottlenecks and improve productivity.
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>
-🚀 Sustainable Growth
-</h3>
-
-<p>
-Create repeatable processes that scale with your business.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
 <!-- =======================
 MARKETPLACE ROADMAP
 ======================= -->
@@ -728,8 +925,12 @@ Marketplace Expansion
 </span>
 
 <h2>
-Supported & Upcoming Marketplaces
+Current & Upcoming Marketplaces
 </h2>
+
+<p>
+B2B Help currently specializes in Flipkart operations and is preparing support for additional marketplaces.
+</p>
 
 </div>
 
@@ -800,8 +1001,70 @@ Coming Soon
 </div>
 
 </section>
+
 <!-- =======================
-FAQ SECTION
+BENEFITS
+======================= -->
+
+<section
+class="section"
+style="background:#f8fafc;"
+>
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>
+Business Benefits
+</span>
+
+<h2>
+Why Sellers Partner With B2B Help
+</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>📈 Scale Faster</h3>
+<p>Focus on growth while we help streamline operations.</p>
+</div>
+
+<div class="feature-card">
+<h3>⚡ Faster Dispatch</h3>
+<p>Improve order readiness and shipment speed.</p>
+</div>
+
+<div class="feature-card">
+<h3>🎯 Better Accuracy</h3>
+<p>Reduce operational errors and returns.</p>
+</div>
+
+<div class="feature-card">
+<h3>📦 Bulk Ready</h3>
+<p>Handle high-volume sales periods confidently.</p>
+</div>
+
+<div class="feature-card">
+<h3>💰 Reduce Costs</h3>
+<p>Structured workflows improve productivity.</p>
+</div>
+
+<div class="feature-card">
+<h3>🚀 Marketplace Growth</h3>
+<p>Build scalable operational foundations.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================
+FAQ
 ======================= -->
 
 <section class="faq-section">
@@ -810,13 +1073,9 @@ FAQ SECTION
 
 <div class="section-heading">
 
-<span>
-FAQ
-</span>
+<span>FAQ</span>
 
-<h2>
-Frequently Asked Questions
-</h2>
+<h2>Frequently Asked Questions</h2>
 
 <p>
 Everything you need to know about our Bulk Order Management Services.
@@ -827,63 +1086,38 @@ Everything you need to know about our Bulk Order Management Services.
 <div class="faq-container">
 
 <details class="faq-card" open>
-
-<summary>
-What is bulk order management?
-</summary>
-
+<summary>Do you currently support Flipkart sellers?</summary>
 <p>
-Bulk order management is the process of handling large volumes of ecommerce orders efficiently while maintaining accuracy and fulfillment speed.
+Yes, Flipkart is currently our active marketplace platform. We help sellers with order processing, SKU sorting and dispatch preparation.
 </p>
-
 </details>
 
 <details class="faq-card">
-
-<summary>
-Can you handle high-volume orders?
-</summary>
-
+<summary>Can you handle bulk order volumes?</summary>
 <p>
-Yes. Our workflows are designed to support businesses processing hundreds or thousands of orders.
+Absolutely. Our workflow is designed to process large order volumes efficiently while maintaining accuracy.
 </p>
-
 </details>
 
 <details class="faq-card">
-
-<summary>
-How do you improve fulfillment speed?
-</summary>
-
+<summary>Do you provide SKU sorting services?</summary>
 <p>
-Through structured workflows, SKU coordination, dispatch planning and operational monitoring.
+Yes. SKU-wise sorting is one of our core services and helps reduce operational errors.
 </p>
-
 </details>
 
 <details class="faq-card">
-
-<summary>
-Do you support Flipkart sellers?
-</summary>
-
+<summary>Which marketplaces are coming next?</summary>
 <p>
-Yes. Flipkart is currently our active marketplace focus.
+Amazon, Meesho, Ajio and Snapdeal integrations are planned in our roadmap.
 </p>
-
 </details>
 
 <details class="faq-card">
-
-<summary>
-How can I get started?
-</summary>
-
+<summary>How can I get started?</summary>
 <p>
-Book a free consultation through our website or contact us directly via WhatsApp.
+Book a free consultation or contact our team on WhatsApp at +91 80037 69737.
 </p>
-
 </details>
 
 </div>
@@ -893,7 +1127,7 @@ Book a free consultation through our website or contact us directly via WhatsApp
 </section>
 
 <!-- =======================
-LOCATION
+GOOGLE MAP
 ======================= -->
 
 <section class="section">
@@ -938,35 +1172,28 @@ CTA
 <div
 style="
 background:linear-gradient(135deg,#2563eb,#1d4ed8);
-padding:80px 40px;
+padding:70px 40px;
 border-radius:30px;
 text-align:center;
 color:white;
 "
 >
 
-<h2
-style="
-font-size:2.5rem;
-margin-bottom:20px;
-color:white;
-"
->
+<h2 style="color:white;">
 
 Need Professional
-Bulk Order Management Support?
+Flipkart Order Processing Support?
 
 </h2>
 
 <p
 style="
 max-width:700px;
-margin:0 auto 30px;
-font-size:1.1rem;
+margin:20px auto;
 "
 >
 
-Scale your ecommerce operations with confidence. Let B2B Help streamline high-volume order processing and fulfillment workflows.
+Talk with our team and discover how B2B Help can help streamline your marketplace operations.
 
 </p>
 
@@ -986,14 +1213,13 @@ Book Free Demo
 </section>
 
 <!-- =======================
-WHATSAPP BUTTON
+WHATSAPP FLOATING BUTTON
 ======================= -->
 
 <a
 href="https://wa.me/918003769737"
 target="_blank"
 class="whatsapp-float"
-aria-label="WhatsApp"
 >
 
 💬
@@ -1009,6 +1235,7 @@ style="
 background:#020617;
 color:white;
 padding:80px 0;
+margin-top:80px;
 "
 >
 
@@ -1018,125 +1245,4 @@ padding:80px 0;
 style="
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-"
->
-
-<div>
-
-<img
-src="../assets/logo.png"
-alt="B2B Help"
-style="height:80px;margin-bottom:20px;"
->
-
-<p>
-Professional ecommerce operations support for growing marketplace businesses.
-</p>
-
-</div>
-
-<div>
-
-<h3>
-Quick Links
-</h3>
-
-<br>
-
-<p>
-<a href="../index.html" style="color:#cbd5e1;">
-Home
-</a>
-</p>
-
-<p>
-<a href="../index.html#services" style="color:#cbd5e1;">
-Services
-</a>
-</p>
-
-<p>
-<a href="../index.html#contact" style="color:#cbd5e1;">
-Contact
-</a>
-</p>
-
-</div>
-
-<div>
-
-<h3>
-Contact
-</h3>
-
-<br>
-
-<p>
-📍 Jaipur, Rajasthan
-</p>
-
-<p>
-📞 +91 80037 69737
-</p>
-
-<p>
-✉️ mdcodecrafts@gmail.com
-</p>
-
-</div>
-
-</div>
-
-<hr
-style="
-margin:40px 0;
-border-color:rgba(255,255,255,.1);
-"
->
-
-<p
-style="
-text-align:center;
-color:#94a3b8;
-"
->
-
-© 2025 B2B Help. All Rights Reserved.
-
-</p>
-
-</div>
-
-</footer>
-
-<!-- =======================
-MOBILE MENU JS
-======================= -->
-
-<script>
-
-const mobileMenuBtn =
-document.getElementById(
-"mobileMenuBtn"
-);
-
-const mobileMenu =
-document.getElementById(
-"mobileMenu"
-);
-
-mobileMenuBtn.addEventListener(
-"click",
-() => {
-mobileMenu.classList.toggle(
-"active"
-);
-}
-);
-
-</script>
-
-</body>
-
-</html>
+gap:40px
