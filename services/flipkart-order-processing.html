@@ -1,161 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Flipkart Order Processing Services | B2B Help</title>
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
 
-<meta name="description" content="Professional Flipkart Order Processing Services by B2B Help. Improve accuracy, dispatch speed and marketplace operations with expert order processing support.">
+<title>
+Flipkart Order Processing Services | B2B Help
+</title>
 
-<link rel="icon" href="../assets/logo.png">
-<link rel="stylesheet" href="../css/style.css">
+<meta
+name="description"
+content="Professional Flipkart Order Processing Services by B2B Help. SKU sorting, dispatch preparation, bulk order handling and marketplace operations support."
+>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta
+name="keywords"
+content="Flipkart order processing, Flipkart seller support, ecommerce operations, SKU sorting, order management services"
+>
+
+<meta
+name="robots"
+content="index,follow"
+>
+
+<link
+rel="canonical"
+href="https://b2bhelp.in/services/flipkart-order-processing.html"
+>
+
+<link
+rel="icon"
+type="image/png"
+href="../assets/logo.png"
+>
+
+<link
+rel="stylesheet"
+href="../css/style.css"
+>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet"
+>
 
 <style>
 
-.service-page-hero{
+/* ===========================
+SERVICE PAGE STYLES
+=========================== */
+
+.service-navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.service-navbar-container{
+height:85px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.service-logo img{
+height:70px;
+}
+
+.service-nav{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.service-nav a{
+font-weight:600;
+color:#0f172a;
+}
+
+.hero-service{
 padding:180px 0 120px;
-background:linear-gradient(135deg,#020617,#0f172a,#1e3a8a);
-color:#fff;
+background:
+linear-gradient(
+135deg,
+#020617,
+#0f172a,
+#1e3a8a
+);
+position:relative;
+overflow:hidden;
 }
 
-.service-page-hero h1{
-font-size:clamp(2.8rem,6vw,5rem);
-line-height:1.1;
-margin-bottom:25px;
+.hero-service::before{
+content:"";
+position:absolute;
+width:700px;
+height:700px;
+background:#2563eb;
+border-radius:50%;
+filter:blur(180px);
+opacity:.20;
+top:-200px;
+right:-100px;
 }
 
-.service-page-hero p{
-font-size:1.15rem;
-max-width:800px;
-color:#cbd5e1;
+.hero-service-content{
+position:relative;
+z-index:2;
 }
 
 .service-badge{
 display:inline-block;
-padding:12px 20px;
+padding:12px 18px;
 border-radius:999px;
 background:rgba(255,255,255,.08);
+color:white;
+border:1px solid rgba(255,255,255,.12);
 margin-bottom:25px;
 }
 
-.stats-grid{
+.hero-service h1{
+font-size:clamp(3rem,6vw,5.5rem);
+line-height:1.05;
+color:white;
+margin-bottom:25px;
+max-width:900px;
+}
+
+.hero-service p{
+font-size:1.15rem;
+color:#cbd5e1;
+max-width:850px;
+line-height:1.8;
+}
+
+.hero-buttons{
+margin-top:35px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn-white{
+background:white;
+color:#0f172a;
+padding:16px 28px;
+border-radius:14px;
+font-weight:700;
+}
+
+.btn-glass{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+color:white;
+padding:16px 28px;
+border-radius:14px;
+font-weight:700;
+}
+
+.trust-strip{
+margin-top:-70px;
+position:relative;
+z-index:20;
+}
+
+.trust-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:25px;
-margin-top:-70px;
-position:relative;
-z-index:10;
 }
 
-.stat-card{
-background:#fff;
+.trust-card{
+background:white;
 padding:35px;
-border-radius:24px;
+border-radius:25px;
 text-align:center;
-box-shadow:0 20px 40px rgba(0,0,0,.08);
+box-shadow:0 20px 50px rgba(0,0,0,.08);
 }
 
-.stat-card h3{
-font-size:3rem;
+.trust-card h3{
+font-size:2.8rem;
 color:#2563eb;
-}
-
-.feature-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.feature-card{
-background:#fff;
-padding:35px;
-border-radius:24px;
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-}
-
-.feature-card h3{
-margin-bottom:15px;
-color:#0f172a;
-}
-
-.workflow-grid{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:20px;
-}
-
-.workflow-step{
-background:#0f172a;
-color:#fff;
-padding:30px;
-border-radius:20px;
-text-align:center;
-}
-
-.workflow-step h3{
-font-size:2rem;
 margin-bottom:10px;
 }
 
-.market-grid{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:20px;
-}
-
-.market-card{
-padding:30px;
-border-radius:20px;
-text-align:center;
-background:#fff;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.market-live{
-border:3px solid #10b981;
-}
-
-.cta-banner{
-background:linear-gradient(135deg,#2563eb,#1d4ed8);
-padding:80px 30px;
-color:#fff;
-text-align:center;
-border-radius:30px;
-}
-
-.faq-item{
-background:#fff;
-padding:25px;
-margin-bottom:15px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,.06);
+.trust-card p{
+font-weight:600;
+color:#475569;
 }
 
 @media(max-width:992px){
 
-.stats-grid,
-.feature-grid,
-.workflow-grid,
-.market-grid{
-grid-template-columns:1fr 1fr;
+.trust-grid{
+grid-template-columns:repeat(2,1fr);
 }
 
 }
 
 @media(max-width:768px){
 
-.stats-grid,
-.feature-grid,
-.workflow-grid,
-.market-grid{
-grid-template-columns:1fr;
+.service-navbar-container{
+height:75px;
 }
 
-.service-page-hero{
-padding:140px 0 80px;
+.service-logo img{
+height:60px;
+}
+
+.service-nav{
+display:none;
+}
+
+.hero-service{
+padding:140px 0 90px;
+}
+
+.hero-service h1{
+font-size:2.5rem;
+}
+
+.trust-grid{
+grid-template-columns:1fr;
 }
 
 }
@@ -166,287 +241,99 @@ padding:140px 0 80px;
 
 <body>
 
-<section class="service-page-hero">
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
 
-<div class="container">
+<header class="service-navbar">
+
+<div class="container service-navbar-container">
+
+<a
+href="../index.html"
+class="service-logo"
+>
+<img
+src="../assets/logo.png"
+alt="B2B Help"
+>
+</a>
+
+<nav class="service-nav">
+
+<a href="../index.html">
+🏠 Home
+</a>
+
+<a href="../index.html#services">
+Services
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+<a
+href="https://b2bhelp.in/login"
+class="btn btn-primary"
+>
+Login
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section class="hero-service">
+
+<div class="container hero-service-content">
 
 <span class="service-badge">
-🚀 Currently Supporting Flipkart Marketplace
+
+🚀 Currently Processing Flipkart Orders
+
 </span>
 
 <h1>
+
+Professional
 Flipkart Order Processing Services
+For Growing Ecommerce Businesses
+
 </h1>
 
 <p>
-B2B Help helps ecommerce sellers streamline Flipkart operations through professional order processing, SKU sorting, dispatch preparation and bulk order management. Our goal is to improve operational efficiency while supporting scalable marketplace growth.
+
+B2B Help helps ecommerce sellers streamline
+their Flipkart operations through accurate order
+processing, SKU-wise sorting, dispatch preparation
+and bulk order handling.
+
+Our structured workflows reduce operational
+workload and improve marketplace efficiency.
+
 </p>
 
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="stats-grid">
-
-<div class="stat-card">
-<h3>10K+</h3>
-<p>Orders Processed</p>
-</div>
-
-<div class="stat-card">
-<h3>99.8%</h3>
-<p>Processing Accuracy</p>
-</div>
-
-<div class="stat-card">
-<h3>24/7</h3>
-<p>Operational Support</p>
-</div>
-
-<div class="stat-card">
-<h3>1</h3>
-<p>Marketplace Live</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-heading">
-<span>Why B2B Help</span>
-<h2>Built For Growing Ecommerce Businesses</h2>
-</div>
-
-<div class="feature-grid">
-
-<div class="feature-card">
-<h3>⚡ Fast Processing</h3>
-<p>Reduce operational delays and improve order turnaround times.</p>
-</div>
-
-<div class="feature-card">
-<h3>🎯 Better Accuracy</h3>
-<p>Structured workflows minimize order handling errors.</p>
-</div>
-
-<div class="feature-card">
-<h3>📦 Bulk Order Support</h3>
-<p>Handle high-volume order processing efficiently.</p>
-</div>
-
-<div class="feature-card">
-<h3>🏷 SKU Sorting</h3>
-<p>Accurate SKU-based sorting for streamlined fulfillment.</p>
-</div>
-
-<div class="feature-card">
-<h3>🚚 Dispatch Ready</h3>
-<p>Orders prepared for fast marketplace dispatch.</p>
-</div>
-
-<div class="feature-card">
-<h3>📈 Scalable Operations</h3>
-<p>Processes designed to support business growth.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-heading">
-<span>Workflow</span>
-<h2>How Our Process Works</h2>
-</div>
-
-<div class="workflow-grid">
-
-<div class="workflow-step">
-<h3>1</h3>
-<p>Order Download</p>
-</div>
-
-<div class="workflow-step">
-<h3>2</h3>
-<p>SKU Sorting</p>
-</div>
-
-<div class="workflow-step">
-<h3>3</h3>
-<p>Verification</p>
-</div>
-
-<div class="workflow-step">
-<h3>4</h3>
-<p>Dispatch Preparation</p>
-</div>
-
-<div class="workflow-step">
-<h3>5</h3>
-<p>Ready To Ship</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-heading">
-<span>Services Included</span>
-<h2>Complete Flipkart Operations Support</h2>
-</div>
-
-<div class="feature-grid">
-
-<div class="feature-card">
-<h3>Order Verification</h3>
-<p>Verify and organize incoming Flipkart orders accurately.</p>
-</div>
-
-<div class="feature-card">
-<h3>SKU Label Sorting</h3>
-<p>Efficient SKU-wise organization for faster fulfillment.</p>
-</div>
-
-<div class="feature-card">
-<h3>Dispatch Preparation</h3>
-<p>Ready-to-ship workflows optimized for speed.</p>
-</div>
-
-<div class="feature-card">
-<h3>Bulk Order Management</h3>
-<p>Handle seasonal spikes and large order volumes.</p>
-</div>
-
-<div class="feature-card">
-<h3>Operational Monitoring</h3>
-<p>Track workflow consistency and processing quality.</p>
-</div>
-
-<div class="feature-card">
-<h3>Marketplace Support</h3>
-<p>Dedicated support for growing ecommerce businesses.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-heading">
-<span>Marketplace Roadmap</span>
-<h2>Current & Future Integrations</h2>
-</div>
-
-<div class="market-grid">
-
-<div class="market-card market-live">
-<h3>Flipkart</h3>
-<p>Currently Live</p>
-</div>
-
-<div class="market-card">
-<h3>Amazon</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="market-card">
-<h3>Meesho</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="market-card">
-<h3>Ajio</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="market-card">
-<h3>Snapdeal</h3>
-<p>Coming Soon</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-heading">
-<span>FAQ</span>
-<h2>Frequently Asked Questions</h2>
-</div>
-
-<div class="faq-item">
-<h3>Do you currently support Flipkart sellers?</h3>
-<p>Yes. Flipkart is our active marketplace platform.</p>
-</div>
-
-<div class="faq-item">
-<h3>Can you handle bulk orders?</h3>
-<p>Yes. Our workflows are designed for large order volumes.</p>
-</div>
-
-<div class="faq-item">
-<h3>Do you provide SKU sorting?</h3>
-<p>Yes. SKU sorting is one of our core operational services.</p>
-</div>
-
-<div class="faq-item">
-<h3>Which marketplaces are next?</h3>
-<p>Amazon, Meesho, Ajio and Snapdeal are planned for future integration.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="cta-banner">
-
-<h2>
-Need Flipkart Order Processing Support?
-</h2>
-
-<p>
-Talk with B2B Help and streamline your marketplace operations today.
-</p>
-
-<br>
-
-<a href="../index.html#demo" class="btn btn-secondary">
-Book Free Consultation
+<div class="hero-buttons">
+
+<a
+href="../index.html#demo"
+class="btn-white"
+>
+Book Free Demo
+</a>
+
+<a
+href="https://b2bhelp.in/login"
+class="btn-glass"
+>
+Customer Login
 </a>
 
 </div>
@@ -455,27 +342,58 @@ Book Free Consultation
 
 </section>
 
-<footer class="section" style="background:#0f172a;color:#fff;text-align:center;">
+<!-- ========================= -->
+<!-- TRUST STATS -->
+<!-- ========================= -->
+
+<section class="trust-strip">
 
 <div class="container">
 
-<img src="../assets/logo.png" alt="B2B Help" style="height:70px;">
+<div class="trust-grid">
 
-<h3>B2B Help</h3>
+<div class="trust-card">
 
-<p>Your Partner For Automated Marketplace Operations</p>
+<h3>10K+</h3>
 
-<p>📍 Jaipur, Rajasthan</p>
-
-<p>📧 mdcodecrafts@gmail.com</p>
-
-<p>📞 +91 80037 69737</p>
-
-<p>© 2026 B2B Help. All Rights Reserved.</p>
+<p>
+Orders Processed
+</p>
 
 </div>
 
-</footer>
+<div class="trust-card">
 
-</body>
-</html>
+<h3>99.8%</h3>
+
+<p>
+Processing Accuracy
+</p>
+
+</div>
+
+<div class="trust-card">
+
+<h3>24/7</h3>
+
+<p>
+Operational Support
+</p>
+
+</div>
+
+<div class="trust-card">
+
+<h3>Jaipur</h3>
+
+<p>
+Rajasthan Based Team
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
