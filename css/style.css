@@ -666,11 +666,6 @@ img{
     display:block;
   }
 
-}
-.logo{
-  display:flex;
-  align-items:center;
-}
   .mobile-menu-btn{
     font-size:34px;
     color:#0f172a;
@@ -679,6 +674,11 @@ img{
     border:none;
   }
 
+}
+
+.logo{
+  display:flex;
+  align-items:center;
 }
 /* =========================================
    INDUSTRY SOLUTIONS
