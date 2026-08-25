@@ -56,24 +56,18 @@
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header class="site-header">
 
     <div class="container nav-container">
 
-        <a href="index.html" class="brand">
-
+        <a href="index.html" class="brand" aria-label="B2B Help Home">
             <img
                 src="assets/logo.png"
                 alt="B2B Help"
                 class="brand-logo">
-
         </a>
 
-        <nav class="desktop-nav">
+        <nav class="desktop-nav" aria-label="Main navigation">
 
             <a href="#about">About</a>
 
@@ -83,25 +77,17 @@
 
             <a href="#why-us">Why B2B Help</a>
 
+            <a href="blog.html">Blog</a>
+
             <a href="#contact">Contact</a>
 
         </nav>
 
         <div class="nav-actions">
 
-            <a href="#contact" class="btn btn-outline">
-                Book a Consultation
-            </a>
-
-            <a href="https://your-login-url.com"
-               class="btn btn-primary"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                Login
-
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
+            <a href="#contact" class="btn btn-primary">
+                Book a Free Consultation
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
         </div>
@@ -109,7 +95,9 @@
         <button
             class="mobile-menu-btn"
             id="mobileMenuBtn"
-            aria-label="Open menu">
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false">
 
             <i class="fa-solid fa-bars"></i>
 
@@ -117,35 +105,43 @@
 
     </div>
 
-    <!-- Mobile Menu -->
+
+    <!-- Mobile Navigation -->
 
     <div class="mobile-menu" id="mobileMenu">
 
-        <a href="#about">About</a>
-
-        <a href="#services">Services</a>
-
-        <a href="#marketplaces">Marketplaces</a>
-
-        <a href="#why-us">Why B2B Help</a>
-
-        <a href="#contact">Contact</a>
-
-        <a href="#contact" class="mobile-cta">
-            Book a Consultation
+        <a href="#about">
+            About
         </a>
 
-        <a href="https://your-login-url.com"
-           target="_blank"
-           rel="noopener noreferrer">
+        <a href="#services">
+            Services
+        </a>
 
-            Login
+        <a href="#marketplaces">
+            Marketplaces
+        </a>
+
+        <a href="#why-us">
+            Why B2B Help
+        </a>
+
+        <a href="blog.html">
+            Blog
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+        <a href="#contact" class="mobile-cta">
+            Book a Free Consultation
+            <i class="fa-solid fa-arrow-right"></i>
         </a>
 
     </div>
 
 </header>
-
 
 <!-- =========================
      HERO
