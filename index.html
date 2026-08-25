@@ -1,1473 +1,1350 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0"
->
+    <title>B2B Help | E-commerce, Marketplace & Digital Growth Solutions</title>
 
-<title>
-B2B Help | Your Partner for Automated Marketplace Operations
-</title>
+    <meta name="description"
+        content="B2B Help helps businesses grow through marketplace account management, website development and social media management for Flipkart, Amazon, Myntra, Meesho and more.">
 
-<meta
-name="description"
-content="Marketplace order processing, SKU-wise sorting and bulk operations support for growing e-commerce businesses."
->
+    <meta name="keywords"
+        content="Flipkart account management, Amazon account management, Myntra account management, Meesho account management, marketplace management, website development, social media management, ecommerce services">
 
-<meta
-name="keywords"
-content="Flipkart order processing, ecommerce order management, SKU sorting, marketplace operations, Jaipur ecommerce services"
->
+    <meta name="author" content="B2B Help">
 
-<meta
-name="author"
-content="B2B Help"
->
+    <meta name="robots" content="index, follow">
 
-<meta
-property="og:title"
-content="B2B Help"
->
+    <link rel="canonical" href="https://b2bhelp.in/">
 
-<meta
-property="og:description"
-content="Marketplace order processing solutions for ecommerce sellers."
->
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="B2B Help | E-commerce, Marketplace & Digital Growth Solutions">
 
-<meta
-property="og:url"
-content="https://b2bhelp.in"
->
+    <meta property="og:description"
+        content="Your partner for marketplace management, website development and social media growth.">
 
-<meta
-property="og:type"
-content="website"
->
+    <meta property="og:url" content="https://b2bhelp.in/">
 
-<link
-rel="icon"
-type="image/png"
-href="assets/logo.png"
->
+    <meta property="og:type" content="website">
 
-<link
-rel="preconnect"
-href="https://fonts.googleapis.com"
->
+    <meta property="og:image"
+        content="https://b2bhelp.in/assets/logo.png">
 
-<link
-rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin
->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-<link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-rel="stylesheet"
->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link
-rel="stylesheet"
-href="css/style.css"
->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Z003WECMQ"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-5Z003WECMQ');
-</script>
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- ========================= -->
-<!-- NAVBAR -->
-<!-- ========================= -->
+<!-- =========================
+     HEADER
+========================= -->
 
-<header class="navbar">
+<header class="site-header">
 
-  <div class="container navbar-container">
+    <div class="container nav-container">
 
-    <a href="#" class="logo">
+        <a href="index.html" class="brand">
 
-  <img
-    src="assets/logo.png"
-    alt="B2B Help Logo"
-    class="logo-img"
-  >
+            <img
+                src="assets/logo.png"
+                alt="B2B Help"
+                class="brand-logo">
 
-</a>
+        </a>
 
-    <nav class="desktop-nav">
+        <nav class="desktop-nav">
 
-      <a href="#about">About</a>
+            <a href="#about">About</a>
 
-      <a href="#services">Services</a>
+            <a href="#services">Services</a>
 
-      <a href="#marketplaces">Marketplaces</a>
+            <a href="#marketplaces">Marketplaces</a>
 
-      <a href="#workflow">Workflow</a>
+            <a href="#why-us">Why B2B Help</a>
 
-      <a href="#contact">Contact</a>
+            <a href="#contact">Contact</a>
 
-    </nav>
-<a href="tel:+918003769737" class="nav-phone">
-  📞 +91 80037 69737
-</a>
-    <div class="nav-actions">
+        </nav>
 
-      <a
-        href="#demo"
-        class="btn btn-outline"
-      >
-        Book Demo
-      </a>
+        <div class="nav-actions">
 
-      <a
-        href="#"
-        class="btn btn-primary"
-      >
-        Login
-      </a>
+            <a href="#contact" class="btn btn-outline">
+                Book a Consultation
+            </a>
+
+            <a href="https://your-login-url.com"
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                Login
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
 
     </div>
 
-    <button
-      class="mobile-menu-btn"
-      id="mobileMenuBtn"
-    >
-      ☰
-    </button>
+    <!-- Mobile Menu -->
 
-  </div>
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#about">About</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#marketplaces">Marketplaces</a>
+
+        <a href="#why-us">Why B2B Help</a>
+
+        <a href="#contact">Contact</a>
+
+        <a href="#contact" class="mobile-cta">
+            Book a Consultation
+        </a>
+
+        <a href="https://your-login-url.com"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            Login
+        </a>
+
+    </div>
 
 </header>
-<div id="mobileMenu" class="mobile-menu">
 
-  <a href="#about">About</a>
 
-  <a href="#services">Services</a>
+<!-- =========================
+     HERO
+========================= -->
 
-  <a href="#marketplaces">Marketplaces</a>
-
-  <a href="#workflow">Workflow</a>
-
-  <a href="#contact">Contact</a>
-
-  <a href="#demo" class="btn btn-outline">
-    Book Demo
-  </a>
-
-  <a href="#" class="btn btn-primary">
-    Login
-  </a>
-
-</div>
-<!-- ========================= -->
-<!-- HERO -->
-<!-- ========================= -->
+<main>
 
 <section class="hero">
 
-  <div class="hero-gradient"></div>
+    <div class="hero-glow hero-glow-one"></div>
 
-  <div class="container hero-container">
+    <div class="hero-glow hero-glow-two"></div>
 
-    <div class="hero-content">
+    <div class="container hero-grid">
 
-      <div class="hero-badge">
+        <div class="hero-content">
 
-        🚀 Currently Supporting Flipkart Marketplace
+            <div class="hero-badge">
 
-      </div>
+                <span class="badge-dot"></span>
 
-      <h1>
+                E-commerce & Digital Business Solutions
 
-        Your Partner For
-        Automated Marketplace Operations
+            </div>
 
-      </h1>
+            <h1>
 
-      <p>
+                Your Partner for
 
-        B2B Help enables e-commerce sellers to
-        streamline order processing,
-        SKU-wise label sorting,
-        dispatch preparation,
-        and bulk order operations.
+                <span> E-commerce & Digital Growth</span>
 
-        Currently supporting Flipkart sellers,
-        with Amazon, Meesho, Ajio and Snapdeal
-        integrations on the roadmap.
+            </h1>
 
-      </p>
+            <p class="hero-description">
 
-      <div class="hero-buttons">
+                We help businesses manage marketplaces, build powerful
+                websites and strengthen their digital presence — all
+                through one reliable technology and operations partner.
 
-        <a
-          href="#demo"
-          class="btn btn-primary btn-large"
-        >
-          Book Free Consultation
-        </a>
+            </p>
 
-        <a
-          href="#services"
-          class="btn btn-secondary btn-large"
-        >
-          Explore Services
-        </a>
+            <div class="hero-buttons">
 
-      </div>
+                <a href="#contact" class="btn btn-primary btn-large">
 
-      <div class="hero-trust">
+                    Book a Free Consultation
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+                <a href="#services" class="btn btn-secondary btn-large">
+
+                    Explore Services
+
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <div class="trust-item">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Marketplace Expertise
+
+                </div>
+
+                <div class="trust-item">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Business-focused Solutions
+
+                </div>
+
+                <div class="trust-item">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Dedicated Support
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero Visual -->
+
+        <div class="hero-visual">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-top">
+
+                    <div>
+
+                        <span class="dashboard-label">
+                            BUSINESS OVERVIEW
+                        </span>
+
+                        <h3>
+                            Digital Operations
+                        </h3>
+
+                    </div>
+
+                    <div class="status-badge">
+
+                        <span></span>
+
+                        Active
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-chart">
+
+                    <div class="chart-header">
+
+                        <span>
+                            Business Growth
+                        </span>
+
+                        <strong>
+                            +32.8%
+                        </strong>
+
+                    </div>
+
+                    <div class="chart-area">
+
+                        <div class="chart-line"></div>
+
+                        <div class="chart-point point-1"></div>
+                        <div class="chart-point point-2"></div>
+                        <div class="chart-point point-3"></div>
+                        <div class="chart-point point-4"></div>
+                        <div class="chart-point point-5"></div>
+
+                    </div>
+
+                    <div class="chart-months">
+
+                        <span>Jan</span>
+                        <span>Feb</span>
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>May</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stats">
+
+                    <div class="dashboard-stat">
+
+                        <div class="stat-icon blue">
+
+                            <i class="fa-solid fa-store"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>04</strong>
+
+                            <span>Marketplaces</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-stat">
+
+                        <div class="stat-icon purple">
+
+                            <i class="fa-solid fa-globe"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>24/7</strong>
+
+                            <span>Digital Presence</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-stat">
+
+                        <div class="stat-icon green">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>360°</strong>
+
+                            <span>Business Support</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card floating-card-one">
+
+                <div class="floating-icon">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>Marketplace</strong>
+
+                    <span>Management</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card floating-card-two">
+
+                <div class="floating-icon purple-bg">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>Website</strong>
+
+                    <span>Development</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRUST STRIP
+========================= -->
+
+<section class="trust-strip">
+
+    <div class="container">
+
+        <p>
+            Helping businesses build, manage and grow their digital operations
+        </p>
+
+        <div class="trust-logos">
+
+            <span>
+                Marketplace Management
+            </span>
+
+            <span>
+                Website Development
+            </span>
+
+            <span>
+                Social Media Management
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                ABOUT B2B HELP
+            </span>
+
+            <h2>
+                One partner for your
+                <span>digital business journey.</span>
+            </h2>
+
+            <p>
+                From managing marketplace accounts to building your website
+                and growing your social presence, B2B Help brings essential
+                digital business services together under one roof.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-content">
+
+                <p>
+                    We work with e-commerce sellers, brands, manufacturers,
+                    retailers and growing businesses that want to build a
+                    stronger online presence without managing multiple
+                    service providers.
+                </p>
+
+                <p>
+                    Our approach combines technology, operational support
+                    and digital expertise to create practical solutions
+                    focused on efficiency, growth and long-term business
+                    value.
+                </p>
+
+                <a href="#services" class="text-link">
+
+                    Explore our solutions
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="about-highlights">
+
+                <div class="highlight-card">
+
+                    <div class="highlight-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Marketplace Expertise
+                    </h3>
+
+                    <p>
+                        Professional account and operational support for
+                        leading marketplaces.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <div class="highlight-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Digital Solutions
+                    </h3>
+
+                    <p>
+                        Modern websites designed to establish your business
+                        online.
+                    </p>
+
+                </div>
+
+
+                <div class="highlight-card">
+
+                    <div class="highlight-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Growth Support
+                    </h3>
+
+                    <p>
+                        Social media management designed to strengthen
+                        your digital presence.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section services-section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-tag">
+                OUR SERVICES
+            </span>
+
+            <h2>
+                Everything you need to
+                <span>grow online.</span>
+            </h2>
+
+            <p>
+                Practical digital and operational solutions designed for
+                modern businesses.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+
+            <article class="service-card featured-service">
+
+                <div class="service-top">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-store"></i>
+
+                    </div>
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+                </div>
+
+                <span class="service-label">
+                    MARKETPLACE
+                </span>
+
+                <h3>
+                    Marketplace Account Management
+                </h3>
+
+                <p>
+                    Manage and optimize your marketplace operations with
+                    dedicated account and operational support.
+                </p>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Account Management
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Order Management
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Catalog Support
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Marketplace Operations
+                    </li>
+
+                </ul>
+
+                <a href="services.html" class="service-link">
+
+                    Explore Marketplace Services
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </article>
+
+
+            <!-- Service 2 -->
+
+            <article class="service-card">
+
+                <div class="service-top">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                    </div>
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+                </div>
+
+                <span class="service-label">
+                    DEVELOPMENT
+                </span>
+
+                <h3>
+                    Website Development
+                </h3>
+
+                <p>
+                    Professional, responsive and conversion-focused websites
+                    built around your business goals.
+                </p>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Business Websites
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        E-commerce Websites
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Landing Pages
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Website Redesign
+                    </li>
+
+                </ul>
+
+                <a href="services.html" class="service-link">
+
+                    Explore Web Services
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </article>
+
+
+            <!-- Service 3 -->
+
+            <article class="service-card">
+
+                <div class="service-top">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-hashtag"></i>
+
+                    </div>
+
+                    <span class="service-number">
+                        03
+                    </span>
+
+                </div>
+
+                <span class="service-label">
+                    DIGITAL GROWTH
+                </span>
+
+                <h3>
+                    Social Media Management
+                </h3>
+
+                <p>
+                    Build a stronger digital presence with consistent,
+                    professional and strategic social media management.
+                </p>
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Instagram Management
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Facebook Management
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        LinkedIn Management
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Content Planning
+                    </li>
+
+                </ul>
+
+                <a href="services.html" class="service-link">
+
+                    Explore Social Services
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MARKETPLACES
+========================= -->
+
+<section class="section marketplace-section" id="marketplaces">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                MARKETPLACE MANAGEMENT
+            </span>
+
+            <h2>
+                Manage your marketplaces
+                <span>with confidence.</span>
+            </h2>
+
+            <p>
+                Get professional operational support across India's leading
+                e-commerce marketplaces.
+            </p>
+
+        </div>
+
+
+        <div class="marketplace-grid">
+
+            <!-- Flipkart -->
+
+            <div class="marketplace-card active-marketplace">
+
+                <div class="marketplace-card-header">
+
+                    <div class="marketplace-logo">
+                        F
+                    </div>
+
+                    <span class="marketplace-status active">
+
+                        <span></span>
+
+                        Active
+
+                    </span>
+
+                </div>
+
+                <h3>
+                    Flipkart
+                </h3>
+
+                <p>
+                    Marketplace account management and operational support
+                    for Flipkart sellers.
+                </p>
+
+                <a href="flipkart-account-management.html">
+
+                    Learn More
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- Amazon -->
+
+            <div class="marketplace-card">
+
+                <div class="marketplace-card-header">
+
+                    <div class="marketplace-logo dark">
+                        A
+                    </div>
+
+                    <span class="marketplace-status upcoming">
+
+                        <span></span>
+
+                        Upcoming
+
+                    </span>
+
+                </div>
+
+                <h3>
+                    Amazon
+                </h3>
+
+                <p>
+                    Amazon seller account management and marketplace support.
+                </p>
+
+                <span class="coming-soon">
+                    Upcoming Integration
+                </span>
+
+            </div>
+
+
+            <!-- Myntra -->
+
+            <div class="marketplace-card">
+
+                <div class="marketplace-card-header">
+
+                    <div class="marketplace-logo pink">
+                        M
+                    </div>
+
+                    <span class="marketplace-status upcoming">
+
+                        <span></span>
+
+                        Upcoming
+
+                    </span>
+
+                </div>
+
+                <h3>
+                    Myntra
+                </h3>
+
+                <p>
+                    Marketplace account and operational support for Myntra
+                    sellers.
+                </p>
+
+                <span class="coming-soon">
+                    Upcoming Integration
+                </span>
+
+            </div>
+
+
+            <!-- Meesho -->
+
+            <div class="marketplace-card">
+
+                <div class="marketplace-card-header">
+
+                    <div class="marketplace-logo red">
+                        M
+                    </div>
+
+                    <span class="marketplace-status upcoming">
+
+                        <span></span>
+
+                        Upcoming
+
+                    </span>
+
+                </div>
+
+                <h3>
+                    Meesho
+                </h3>
+
+                <p>
+                    Seller account management and marketplace operations
+                    support.
+                </p>
+
+                <span class="coming-soon">
+                    Upcoming Integration
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY US
+========================= -->
+
+<section class="section why-section" id="why-us">
+
+    <div class="container why-grid">
+
+        <div class="why-content">
+
+            <span class="section-tag">
+                WHY B2B HELP
+            </span>
+
+            <h2>
+                Built around your
+                <span>business goals.</span>
+            </h2>
+
+            <p>
+                We don't believe in one-size-fits-all solutions. Every
+                business has different operational challenges, digital
+                goals and growth opportunities.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+
+                Talk to Our Team
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="why-features">
+
+            <div class="why-feature">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Business-Focused
+                    </h3>
+
+                    <p>
+                        Solutions designed around your actual business
+                        requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-feature">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Efficient Execution
+                    </h3>
+
+                    <p>
+                        Reduce manual workload and simplify everyday
+                        digital operations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-feature">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Dedicated Support
+                    </h3>
+
+                    <p>
+                        Work with a reliable team that understands your
+                        operational needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-feature">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Growth-Oriented
+                    </h3>
+
+                    <p>
+                        Build systems and digital assets that support
+                        long-term growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta-section" id="contact">
+
+    <div class="container">
+
+        <div class="cta-card">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <span class="section-tag light">
+                    LET'S WORK TOGETHER
+                </span>
+
+                <h2>
+                    Ready to build and grow
+                    your online business?
+                </h2>
+
+                <p>
+                    Tell us about your business and we'll help you identify
+                    the right marketplace, website and digital growth
+                    solutions.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="mailto:mdcodecrafts@gmail.com"
+                       class="btn btn-white">
+
+                        Start a Conversation
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                    <a href="https://wa.me/918003769737"
+                       class="btn btn-transparent"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        WhatsApp Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <img
+                src="assets/logo.png"
+                alt="B2B Help"
+                class="footer-logo">
+
+            <p>
+                Your Partner for E-commerce & Digital Growth.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+                <a href="#" aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a href="#" aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Services
+            </h4>
+
+            <a href="services.html">
+                Marketplace Management
+            </a>
+
+            <a href="services.html">
+                Website Development
+            </a>
+
+            <a href="services.html">
+                Social Media Management
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#why-us">
+                Why B2B Help
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <a href="mailto:mdcodecrafts@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                mdcodecrafts@gmail.com
+
+            </a>
+
+            <span>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Jaipur, Rajasthan, India
+
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <p>
+            © 2026 B2B Help. All rights reserved.
+        </p>
 
         <div>
 
-          <strong>99.8%</strong>
-          Processing Accuracy
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
 
         </div>
 
-        <div>
-
-          <strong>24/7</strong>
-          Operational Support
-
-        </div>
-
-        <div>
-
-          <strong>Fast</strong>
-          Turnaround Time
-
-        </div>
-
-      </div>
-
     </div>
-
-    <div class="hero-dashboard">
-
-      <div class="dashboard-card">
-
-        <div class="dashboard-header">
-
-          Operations Overview
-
-        </div>
-
-        <div class="dashboard-row">
-
-          <span>Orders Processed</span>
-          <strong>10,000+</strong>
-
-        </div>
-
-        <div class="dashboard-row">
-
-          <span>Marketplace</span>
-          <strong>Flipkart</strong>
-
-        </div>
-
-        <div class="dashboard-row">
-
-          <span>Accuracy</span>
-          <strong>99.8%</strong>
-
-        </div>
-
-        <div class="dashboard-row">
-
-          <span>Status</span>
-          <strong class="success">
-            Active
-          </strong>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- TRUST METRICS -->
-<!-- ========================= -->
-
-<section class="metrics">
-  <div class="container">
-
-    <div class="metrics-grid">
-
-      <div class="metric-box">
-
-        <h2 class="counter" data-target="10000">
-          0
-        </h2>
-
-        <p>Orders Processed</p>
-
-      </div>
-
-      <div class="metric-box">
-
-        <h2 class="counter" data-target="99">
-          0
-        </h2>
-
-        <p>Processing Accuracy</p>
-
-      </div>
-
-      <div class="metric-box">
-
-        <h2 class="counter" data-target="1">
-          0
-        </h2>
-
-        <p>Marketplace Live</p>
-
-      </div>
-
-      <div class="metric-box">
-
-        <h2 class="counter" data-target="4">
-          0
-        </h2>
-
-        <p>Upcoming Integrations</p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- MARKETPLACE SECTION -->
-<!-- ========================= -->
-
-<section
-  id="marketplaces"
-  class="marketplaces section"
->
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Marketplace Ecosystem
-      </span>
-
-      <h2>
-        Current & Future Integrations
-      </h2>
-
-    </div>
-
-    <div class="marketplace-grid">
-
-      <div class="market-card active">
-
-        <h3>
-          Currently Active
-        </h3>
-
-        <ul>
-
-          <li>
-            ✅ Flipkart
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="market-card roadmap">
-
-        <h3>
-          Integration Roadmap
-        </h3>
-
-        <ul>
-
-          <li>
-            🚀 Amazon
-          </li>
-
-          <li>
-            🚀 Meesho
-          </li>
-
-          <li>
-            🚀 Ajio
-          </li>
-
-          <li>
-            🚀 Snapdeal
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- ABOUT -->
-<!-- ========================= -->
-
-<section
-  id="about"
-  class="about section"
->
-
-  <div class="container about-grid">
-
-    <div>
-
-      <span class="section-tag">
-        About B2B Help
-      </span>
-
-      <h2>
-
-        Simplifying Marketplace Operations
-        For Growing Businesses
-
-      </h2>
-
-      <p>
-
-        Founded in 2026 and based in Jaipur,
-        B2B Help helps e-commerce businesses
-        manage operational workflows with
-        speed, accuracy and consistency.
-
-      </p>
-
-      <p>
-
-        Our goal is to eliminate manual effort,
-        reduce processing errors,
-        and create scalable systems
-        for marketplace sellers.
-
-      </p>
-
-    </div>
-
-    <div class="about-card">
-
-      <h3>
-        Our Mission
-      </h3>
-
-      <p>
-
-        To become India's most trusted
-        marketplace operations partner.
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- PROBLEMS -->
-<!-- ========================= -->
-
-<section class="problems section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Challenges We Solve
-      </span>
-
-      <h2>
-        Common Marketplace Pain Points
-      </h2>
-
-    </div>
-
-    <div class="problem-grid">
-
-      <div class="problem-card">
-        Manual Order Processing
-      </div>
-
-      <div class="problem-card">
-        Dispatch Delays
-      </div>
-
-      <div class="problem-card">
-        SKU Sorting Errors
-      </div>
-
-      <div class="problem-card">
-        Bulk Order Complexity
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- SERVICES -->
-<!-- ========================= -->
-
-<section
-  id="services"
-  class="services section"
->
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Our Services
-      </span>
-
-      <h2>
-        Operational Excellence At Scale
-      </h2>
-
-    </div>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-
-        <h3>
-          Flipkart Order Processing
-        </h3>
-
-        <p>
-          Efficient handling and processing
-          of Flipkart marketplace orders.
-        </p>
-
-        <a
-href="services/flipkart-order-processing
-          class="btn btn-primary"
-        >
-          Learn More
-        </a>
-
-      </div>
-
-      <div class="service-card">
-
-        <h3>
-          SKU Label Sorting
-        </h3>
-
-        <p>
-          Organized and accurate
-          SKU-wise workflow management.
-        </p>
-
-        <a
-          href="services/sku-sorting"
-          class="btn btn-primary"
-        >
-          Learn More
-        </a>
-
-      </div>
-
-      <div class="service-card">
-
-        <h3>
-          Bulk Order Management
-        </h3>
-
-        <p>
-          Handle large order volumes
-          with confidence.
-        </p>
-
-        <a
-          href="services/bulk-order-management"
-          class="btn btn-primary"
-        >
-          Learn More
-        </a>
-
-      </div>
-
-      <div class="service-card">
-
-        <h3>
-          Dispatch Preparation
-        </h3>
-
-        <p>
-          Ready-to-ship workflows
-          optimized for speed.
-        </p>
-
-        <a
-          href="contact.html"
-          class="btn btn-primary"
-        >
-          Contact Us
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- ========================= -->
-<!-- WORKFLOW -->
-<!-- ========================= -->
-
-<section
-  id="workflow"
-  class="workflow section"
->
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Workflow
-      </span>
-
-      <h2>
-        How We Process Orders
-      </h2>
-
-    </div>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-        Order Received
-      </div>
-
-      <div class="timeline-item">
-        Verification
-      </div>
-
-      <div class="timeline-item">
-        SKU Sorting
-      </div>
-
-      <div class="timeline-item">
-        Quality Check
-      </div>
-
-      <div class="timeline-item">
-        Dispatch Ready
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- WHY CHOOSE US -->
-<!-- ========================= -->
-
-<section class="why-us section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Why Choose Us
-      </span>
-
-      <h2>
-        Built For Marketplace Growth
-      </h2>
-
-    </div>
-
-    <div class="why-grid">
-
-      <div class="why-card">
-        Marketplace Expertise
-      </div>
-
-      <div class="why-card">
-        Dedicated Support
-      </div>
-
-      <div class="why-card">
-        Fast Turnaround
-      </div>
-
-      <div class="why-card">
-        High Accuracy
-      </div>
-
-      <div class="why-card">
-        Scalable Operations
-      </div>
-
-      <div class="why-card">
-        Future Integrations
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- ========================= -->
-<!-- INDUSTRY SOLUTIONS -->
-<!-- ========================= -->
-
-<section class="industry-solutions section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Industry Solutions
-      </span>
-
-      <h2>
-        Designed For Modern E-Commerce Businesses
-      </h2>
-
-      <p>
-        Whether you're a growing seller or a high-volume marketplace business,
-        B2B Help helps streamline operations and improve efficiency.
-      </p>
-
-    </div>
-
-    <div class="industry-grid">
-
-      <div class="industry-card">
-
-        <h3>Marketplace Sellers</h3>
-
-        <p>
-          Efficient processing for Flipkart and future marketplace integrations.
-        </p>
-
-      </div>
-
-      <div class="industry-card">
-
-        <h3>Growing Brands</h3>
-
-        <p>
-          Scale operations without increasing operational complexity.
-        </p>
-
-      </div>
-
-      <div class="industry-card">
-
-        <h3>Bulk Order Businesses</h3>
-
-        <p>
-          Handle high-volume orders with structured workflows.
-        </p>
-
-      </div>
-
-      <div class="industry-card">
-
-        <h3>Multi-Channel Commerce</h3>
-
-        <p>
-          Future-ready infrastructure for multiple marketplaces.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- ROADMAP -->
-<!-- ========================= -->
-
-<section class="roadmap section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Product Roadmap
-      </span>
-
-      <h2>
-        Marketplace Expansion Plan
-      </h2>
-
-    </div>
-
-    <div class="roadmap-grid">
-
-      <div class="roadmap-card active">
-
-        <div class="roadmap-status">
-          ACTIVE
-        </div>
-
-        <h3>Flipkart</h3>
-
-        <p>
-          Currently operational and serving marketplace sellers.
-        </p>
-
-      </div>
-
-      <div class="roadmap-card">
-
-        <div class="roadmap-status upcoming">
-          COMING SOON
-        </div>
-
-        <h3>Amazon</h3>
-
-      </div>
-
-      <div class="roadmap-card">
-
-        <div class="roadmap-status upcoming">
-          COMING SOON
-        </div>
-
-        <h3>Meesho</h3>
-
-      </div>
-
-      <div class="roadmap-card">
-
-        <div class="roadmap-status upcoming">
-          COMING SOON
-        </div>
-
-        <h3>Ajio</h3>
-
-      </div>
-
-      <div class="roadmap-card">
-
-        <div class="roadmap-status upcoming">
-          COMING SOON
-        </div>
-
-        <h3>Snapdeal</h3>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- CASE STUDIES -->
-<!-- ========================= -->
-
-<section class="case-studies section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Success Stories
-      </span>
-
-      <h2>
-        Business Impact
-      </h2>
-
-    </div>
-
-    <div class="case-grid">
-
-      <div class="case-card">
-
-        <h3>
-          Faster Processing
-        </h3>
-
-        <p>
-          Streamlined order handling reduced manual effort
-          and improved operational speed.
-        </p>
-
-      </div>
-
-      <div class="case-card">
-
-        <h3>
-          Improved Accuracy
-        </h3>
-
-        <p>
-          SKU-wise sorting reduced fulfillment mistakes
-          and improved consistency.
-        </p>
-
-      </div>
-
-      <div class="case-card">
-
-        <h3>
-          Better Scalability
-        </h3>
-
-        <p>
-          Prepared operations to support future marketplace expansion.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- TESTIMONIALS -->
-<!-- ========================= -->
-
-<section class="testimonials section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Testimonials
-      </span>
-
-      <h2>
-        What Businesses Say
-      </h2>
-
-    </div>
-
-    <div class="testimonial-grid">
-
-      <div class="testimonial-card">
-
-        <p>
-          "B2B Help improved our operational workflow and
-          reduced processing delays significantly."
-        </p>
-
-        <h4>
-          Marketplace Seller
-        </h4>
-
-      </div>
-
-      <div class="testimonial-card">
-
-        <p>
-          "Professional team with excellent attention to detail."
-        </p>
-
-        <h4>
-          E-Commerce Brand
-        </h4>
-
-      </div>
-
-      <div class="testimonial-card">
-
-        <p>
-          "Reliable partner for managing marketplace operations."
-        </p>
-
-        <h4>
-          Business Owner
-        </h4>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- PRICING -->
-<!-- ========================= -->
-
-<section class="pricing section" id="pricing">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Pricing
-      </span>
-
-      <h2>
-        Flexible Plans For Every Business
-      </h2>
-
-    </div>
-
-    <div class="pricing-grid">
-
-      <div class="pricing-card">
-
-        <h3>
-          Starter
-        </h3>
-
-        <div class="price">
-          ₹4,999
-        </div>
-
-        <p>
-          Starting from / month
-        </p>
-
-        <ul>
-
-          <li>Order Processing</li>
-          <li>Email Support</li>
-          <li>Basic Reporting</li>
-
-        </ul>
-
-      </div>
-
-      <div class="pricing-card featured">
-
-        <div class="popular-badge">
-          Most Popular
-        </div>
-
-        <h3>
-          Growth
-        </h3>
-
-        <div class="price">
-          Custom
-        </div>
-
-        <p>
-          For growing businesses
-        </p>
-
-        <ul>
-
-          <li>Bulk Orders</li>
-          <li>SKU Sorting</li>
-          <li>Priority Support</li>
-
-        </ul>
-
-      </div>
-
-      <div class="pricing-card">
-
-        <h3>
-          Enterprise
-        </h3>
-
-        <div class="price">
-          Contact Us
-        </div>
-
-        <p>
-          Custom solutions
-        </p>
-
-        <ul>
-
-          <li>Dedicated Team</li>
-          <li>Custom Workflow</li>
-          <li>SLA Support</li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- FAQ -->
-<!-- ========================= -->
-
-<section class="faq section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        FAQ
-      </span>
-
-      <h2>
-        Frequently Asked Questions
-      </h2>
-
-    </div>
-
-    <div class="faq-list">
-
-      <div class="faq-item">
-
-        <button class="faq-btn">
-          Which marketplace do you currently support?
-        </button>
-
-        <div class="faq-content">
-          Currently Flipkart.
-        </div>
-
-      </div>
-
-      <div class="faq-item">
-
-        <button class="faq-btn">
-          Are Amazon and Meesho supported?
-        </button>
-
-        <div class="faq-content">
-          They are currently on our roadmap.
-        </div>
-
-      </div>
-
-      <div class="faq-item">
-
-        <button class="faq-btn">
-          Can you process bulk orders?
-        </button>
-
-        <div class="faq-content">
-          Yes, bulk order processing is one of our core services.
-        </div>
-
-      </div>
-
-      <div class="faq-item">
-
-        <button class="faq-btn">
-          Do you provide SKU-wise sorting?
-        </button>
-
-        <div class="faq-content">
-          Yes, SKU-based workflow management is included.
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- DEMO FORM -->
-<!-- ========================= -->
-
-<section
-  id="demo"
-  class="demo section"
->
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Book A Demo
-      </span>
-
-      <h2>
-        Schedule Your Free Consultation
-      </h2>
-
-    </div>
-
-    <form
-      id="demoForm"
-      class="demo-form"
-    >
-
-      <input
-        type="text"
-        placeholder="Full Name"
-        required
-      >
-
-      <input
-        type="text"
-        placeholder="Company Name"
-        required
-      >
-
-      <input
-        type="email"
-        placeholder="Email Address"
-        required
-      >
-
-      <input
-        type="tel"
-        placeholder="Phone Number"
-        required
-      >
-
-      <select required>
-
-        <option value="">
-          Monthly Orders
-        </option>
-
-        <option>
-          Below 1000
-        </option>
-
-        <option>
-          1000 - 5000
-        </option>
-
-        <option>
-          5000+
-        </option>
-
-      </select>
-
-      <textarea
-        rows="5"
-        placeholder="Tell us about your requirements"
-      ></textarea>
-
-      <button
-        type="submit"
-        class="btn btn-primary"
-      >
-        Schedule Demo
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- CONTACT -->
-<!-- ========================= -->
-
-<section
-  id="contact"
-  class="contact section"
->
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>
-        Contact Us
-      </span>
-
-      <h2>
-        Let's Build Better Operations Together
-      </h2>
-
-    </div>
-
-    <div class="contact-grid">
-
-      <div class="contact-card">
-
-        <h3>
-          Email
-        </h3>
-
-        <p>
-          mdcodecrafts@gmail.com
-        </p>
-
-      </div>
-
-      <div class="contact-card">
-
-        <h3>
-          Location
-        </h3>
-
-        <p>
-          Jaipur, Rajasthan
-        </p>
-
-      </div>
-
-      <div class="contact-card">
-
-        <h3>
-          Support
-        </h3>
-
-        <p>
-          Monday - Saturday
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- FOOTER -->
-<!-- ========================= -->
-
-<footer class="footer">
-
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-
-        <h3>
-          B2B Help
-        </h3>
-
-        <p>
-          Your Partner for Automated Marketplace Operations.
-        </p>
-
-      </div>
-
-      <div>
-
-        <h4>
-          Current Marketplace
-        </h4>
-
-        <ul>
-
-          <li>Flipkart</li>
-
-        </ul>
-
-      </div>
-
-      <div>
-
-        <h4>
-          Upcoming Integrations
-        </h4>
-
-        <ul>
-
-          <li>Amazon</li>
-          <li>Meesho</li>
-          <li>Ajio</li>
-          <li>Snapdeal</li>
-
-        </ul>
-
-      </div>
-
-      <div>
-
-        <h4>
-          Contact
-        </h4>
-
-        <p>
-          mdcodecrafts@gmail.com
-        </p>
-
-        <p>
-          Jaipur, Rajasthan
-        </p>
-
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      © 2026 B2B Help.
-      All Rights Reserved.
-
-    </div>
-
-  </div>
 
 </footer>
-<script src="js/main.js"></script>
-  <a
-  href="https://wa.me/918003769737"
-  class="whatsapp-float"
-  target="_blank"
->
-  <img
-    src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
-    alt="WhatsApp"
-  >
+
+
+<!-- =========================
+     WHATSAPP FLOAT
+========================= -->
+
+<a
+    href="https://wa.me/918003769737"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with B2B Help on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
 </a>
+
+
+<!-- Main JS -->
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
