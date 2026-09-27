@@ -2217,24 +2217,48 @@ button {
     display: inline-flex;
     align-items: center;
     flex-shrink: 0;
+    width: 220px;
 }
 
 .logo img {
     display: block;
-    width: 150px;
-    height: auto;
-    max-height: 55px;
+    width: 220px;
+    height: 76px;
+    max-width: 100%;
     object-fit: contain;
+    object-position: left center;
 }
 
+/* Footer logo - larger for clear brand visibility */
+.footer-logo {
+    width: 240px;
+}
+
+.footer-logo img {
+    width: 240px;
+    height: 82px;
+}
 
 /* Mobile logo */
 
 @media (max-width: 760px) {
 
+    .logo {
+        width: 160px;
+    }
+
     .logo img {
-        width: 125px;
-        max-height: 48px;
+        width: 160px;
+        height: 58px;
+    }
+
+    .footer-logo {
+        width: 180px;
+    }
+
+    .footer-logo img {
+        width: 180px;
+        height: 62px;
     }
 
 }
