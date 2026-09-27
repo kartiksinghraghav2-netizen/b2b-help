@@ -2209,3 +2209,32 @@ button {
     }
 
 }
+/* =========================================================
+   REAL B2B HELP LOGO
+   ========================================================= */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 150px;
+    height: auto;
+    max-height: 55px;
+    object-fit: contain;
+}
+
+
+/* Mobile logo */
+
+@media (max-width: 760px) {
+
+    .logo img {
+        width: 125px;
+        max-height: 48px;
+    }
+
+}
