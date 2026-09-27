@@ -1,886 +1,376 @@
 /* =========================================================
    B2B HELP
    Main JavaScript
-   Premium E-commerce & Digital Growth Website
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =====================================================
-       ELEMENTS
-    ===================================================== */
+       1. MOBILE MENU
+       ===================================================== */
 
-    const header = document.querySelector(".site-header");
-    const menuButton = document.getElementById("mobileMenuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
 
-    const mobileLinks = mobileMenu
-        ? mobileMenu.querySelectorAll("a")
-        : [];
+    if (menuToggle && mainNav) {
 
-    const navLinks = document.querySelectorAll(
-        ".desktop-nav a"
-    );
+        menuToggle.addEventListener("click", () => {
 
-    const sections = document.querySelectorAll(
-        "main section[id]"
-    );
+            mainNav.classList.toggle("mobile-open");
 
+            const isOpen = mainNav.classList.contains("mobile-open");
 
-    /* =====================================================
-       MOBILE NAVIGATION
-    ===================================================== */
-
-    const closeMobileMenu = () => {
-
-        if (!mobileMenu || !menuButton) return;
-
-        mobileMenu.classList.remove("active");
-
-        document.body.classList.remove(
-            "menu-open"
-        );
-
-        const icon =
-            menuButton.querySelector("i");
-
-        if (icon) {
-
-            icon.classList.remove(
-                "fa-xmark"
-            );
-
-            icon.classList.add(
-                "fa-bars"
-            );
-
-        }
-
-        menuButton.setAttribute(
-            "aria-label",
-            "Open menu"
-        );
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-    };
-
-
-    const openMobileMenu = () => {
-
-        if (!mobileMenu || !menuButton) return;
-
-        mobileMenu.classList.add("active");
-
-        document.body.classList.add(
-            "menu-open"
-        );
-
-        const icon =
-            menuButton.querySelector("i");
-
-        if (icon) {
-
-            icon.classList.remove(
-                "fa-bars"
-            );
-
-            icon.classList.add(
-                "fa-xmark"
-            );
-
-        }
-
-        menuButton.setAttribute(
-            "aria-label",
-            "Close menu"
-        );
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            "true"
-        );
-    };
-
-
-    if (menuButton && mobileMenu) {
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-
-        menuButton.addEventListener(
-            "click",
-            () => {
-
-                const isOpen =
-                    mobileMenu.classList.contains(
-                        "active"
-                    );
-
-                if (isOpen) {
-
-                    closeMobileMenu();
-
-                } else {
-
-                    openMobileMenu();
-
-                }
-
-            }
-        );
-
-
-        mobileLinks.forEach((link) => {
-
-            link.addEventListener(
-                "click",
-                () => {
-
-                    closeMobileMenu();
-
-                }
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
             );
 
         });
 
 
-        document.addEventListener(
-            "click",
-            (event) => {
+        /* Close menu after clicking a link */
 
-                if (
-                    !mobileMenu.classList.contains(
-                        "active"
-                    )
-                ) {
-                    return;
-                }
+        const navLinks = mainNav.querySelectorAll("a");
 
+        navLinks.forEach(link => {
 
-                const clickedMenu =
-                    mobileMenu.contains(
-                        event.target
-                    );
+            link.addEventListener("click", () => {
 
-                const clickedButton =
-                    menuButton.contains(
-                        event.target
-                    );
+                mainNav.classList.remove("mobile-open");
 
-
-                if (
-                    !clickedMenu &&
-                    !clickedButton
-                ) {
-
-                    closeMobileMenu();
-
-                }
-
-            }
-        );
-
-
-        document.addEventListener(
-            "keydown",
-            (event) => {
-
-                if (
-                    event.key === "Escape"
-                ) {
-
-                    closeMobileMenu();
-
-                }
-
-            }
-        );
-
-    }
-
-
-    /* =====================================================
-       HEADER SCROLL EFFECT
-    ===================================================== */
-
-    const handleHeaderScroll = () => {
-
-        if (!header) return;
-
-        if (window.scrollY > 20) {
-
-            header.classList.add(
-                "scrolled"
-            );
-
-        } else {
-
-            header.classList.remove(
-                "scrolled"
-            );
-
-        }
-
-    };
-
-
-    window.addEventListener(
-        "scroll",
-        handleHeaderScroll,
-        {
-            passive: true
-        }
-    );
-
-
-    handleHeaderScroll();
-
-
-    /* =====================================================
-       SMOOTH ANCHOR SCROLL
-    ===================================================== */
-
-    const anchorLinks =
-        document.querySelectorAll(
-            'a[href^="#"]'
-        );
-
-
-    anchorLinks.forEach((link) => {
-
-        link.addEventListener(
-            "click",
-            (event) => {
-
-                const targetId =
-                    link.getAttribute(
-                        "href"
-                    );
-
-
-                if (
-                    !targetId ||
-                    targetId === "#"
-                ) {
-
-                    return;
-
-                }
-
-
-                const target =
-                    document.querySelector(
-                        targetId
-                    );
-
-
-                if (!target) {
-
-                    return;
-
-                }
-
-
-                event.preventDefault();
-
-
-                const headerHeight =
-                    header
-                        ? header.offsetHeight
-                        : 0;
-
-
-                const targetTop =
-                    target.getBoundingClientRect()
-                        .top +
-                    window.scrollY -
-                    headerHeight -
-                    12;
-
-
-                window.scrollTo({
-
-                    top: targetTop,
-
-                    behavior: "smooth"
-
-                });
-
-            }
-        );
-
-    });
-
-
-    /* =====================================================
-       ACTIVE NAVIGATION
-    ===================================================== */
-
-    if (
-        sections.length &&
-        navLinks.length
-    ) {
-
-        const sectionObserver =
-            new IntersectionObserver(
-                (entries) => {
-
-                    entries.forEach(
-                        (entry) => {
-
-                            if (
-                                !entry.isIntersecting
-                            ) {
-
-                                return;
-
-                            }
-
-
-                            const id =
-                                entry.target
-                                    .getAttribute(
-                                        "id"
-                                    );
-
-
-                            navLinks.forEach(
-                                (link) => {
-
-                                    const target =
-                                        link.getAttribute(
-                                            "href"
-                                        );
-
-
-                                    link.classList.toggle(
-                                        "active",
-                                        target ===
-                                        `#${id}`
-                                    );
-
-                                }
-                            );
-
-                        }
-                    );
-
-                },
-                {
-                    threshold: 0.25,
-
-                    rootMargin:
-                        "-90px 0px -50% 0px"
-                }
-            );
-
-
-        sections.forEach(
-            (section) => {
-
-                sectionObserver.observe(
-                    section
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
                 );
 
-            }
-        );
+            });
 
-    }
+        });
 
 
-    /* =====================================================
-       SCROLL REVEAL
-    ===================================================== */
+        /* Close menu when clicking outside */
 
-    const revealElements =
-        document.querySelectorAll(
-            `
-            .section-heading,
-            .about-content,
-            .highlight-card,
-            .service-card,
-            .marketplace-card,
-            .why-content,
-            .why-feature,
-            .cta-card,
-            .trust-strip
-            `
-        );
+        document.addEventListener("click", event => {
 
+            const clickedInsideMenu =
+                mainNav.contains(event.target);
 
-    revealElements.forEach(
-        (element) => {
-
-            element.classList.add(
-                "scroll-reveal"
-            );
-
-        }
-    );
-
-
-    if (
-        "IntersectionObserver"
-        in window
-    ) {
-
-        const revealObserver =
-            new IntersectionObserver(
-                (entries, observer) => {
-
-                    entries.forEach(
-                        (entry) => {
-
-                            if (
-                                !entry.isIntersecting
-                            ) {
-
-                                return;
-
-                            }
-
-
-                            entry.target.classList.add(
-                                "revealed"
-                            );
-
-
-                            observer.unobserve(
-                                entry.target
-                            );
-
-                        }
-                    );
-
-                },
-                {
-                    threshold: 0.12,
-
-                    rootMargin:
-                        "0px 0px -45px 0px"
-                }
-            );
-
-
-        revealElements.forEach(
-            (element) => {
-
-                revealObserver.observe(
-                    element
-                );
-
-            }
-        );
-
-    } else {
-
-        revealElements.forEach(
-            (element) => {
-
-                element.classList.add(
-                    "revealed"
-                );
-
-            }
-        );
-
-    }
-
-
-    /* =====================================================
-       STAGGER CARDS
-    ===================================================== */
-
-    const cardGroups = [
-        ".services-grid .service-card",
-        ".marketplace-grid .marketplace-card",
-        ".about-highlights .highlight-card",
-        ".why-features .why-feature"
-    ];
-
-
-    cardGroups.forEach(
-        (selector) => {
-
-            const cards =
-                document.querySelectorAll(
-                    selector
-                );
-
-
-            cards.forEach(
-                (card, index) => {
-
-                    card.style.transitionDelay =
-                        `${index * 90}ms`;
-
-                }
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       HERO DASHBOARD COUNTERS
-    ===================================================== */
-
-    const dashboard =
-        document.querySelector(
-            ".dashboard-card"
-        );
-
-
-    const counterElements =
-        document.querySelectorAll(
-            ".dashboard-stat strong"
-        );
-
-
-    const animateNumber = (
-        element,
-        target,
-        duration = 1100
-    ) => {
-
-        if (!element) return;
-
-
-        const startTime =
-            performance.now();
-
-
-        const update = (
-            currentTime
-        ) => {
-
-            const elapsed =
-                currentTime -
-                startTime;
-
-
-            const progress =
-                Math.min(
-                    elapsed / duration,
-                    1
-                );
-
-
-            const eased =
-                1 -
-                Math.pow(
-                    1 - progress,
-                    3
-                );
-
-
-            const value =
-                Math.round(
-                    target * eased
-                );
-
-
-            element.textContent =
-                String(value).padStart(
-                    2,
-                    "0"
-                );
-
+            const clickedToggle =
+                menuToggle.contains(event.target);
 
             if (
-                progress < 1
+                !clickedInsideMenu &&
+                !clickedToggle
             ) {
 
-                requestAnimationFrame(
-                    update
+                mainNav.classList.remove("mobile-open");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
                 );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       2. HEADER SCROLL EFFECT
+       ===================================================== */
+
+    const header = document.querySelector(".site-header");
+
+    if (header) {
+
+        const handleHeaderScroll = () => {
+
+            if (window.scrollY > 20) {
+
+                header.classList.add("scrolled");
+
+            } else {
+
+                header.classList.remove("scrolled");
 
             }
 
         };
 
+        handleHeaderScroll();
 
-        requestAnimationFrame(
-            update
+        window.addEventListener(
+            "scroll",
+            handleHeaderScroll,
+            { passive: true }
         );
 
-    };
+    }
 
+
+    /* =====================================================
+       3. SMOOTH ANCHOR NAVIGATION
+       ===================================================== */
+
+    const anchorLinks =
+        document.querySelectorAll('a[href^="#"]');
+
+    anchorLinks.forEach(link => {
+
+        link.addEventListener("click", event => {
+
+            const targetId =
+                link.getAttribute("href");
+
+            if (
+                !targetId ||
+                targetId === "#"
+            ) {
+                return;
+            }
+
+            const target =
+                document.querySelector(targetId);
+
+            if (!target) {
+                return;
+            }
+
+            event.preventDefault();
+
+            const headerHeight =
+                header ? header.offsetHeight : 0;
+
+            const targetPosition =
+                target.getBoundingClientRect().top +
+                window.scrollY -
+                headerHeight -
+                15;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
+            });
+
+        });
+
+    });
+
+
+    /* =====================================================
+       4. ACTIVE NAVIGATION
+       ===================================================== */
+
+    const sections =
+        document.querySelectorAll("main section[id]");
+
+    const sectionLinks =
+        document.querySelectorAll(
+            '.main-nav a[href^="#"]'
+        );
 
     if (
-        dashboard &&
-        counterElements.length &&
-        "IntersectionObserver"
-        in window
+        sections.length &&
+        sectionLinks.length
     ) {
 
-        let counterStarted =
-            false;
+        const updateActiveNavigation = () => {
+
+            const scrollPosition =
+                window.scrollY +
+                (header ? header.offsetHeight : 0) +
+                100;
+
+            let currentSection = "";
+
+            sections.forEach(section => {
+
+                const sectionTop =
+                    section.offsetTop;
+
+                const sectionHeight =
+                    section.offsetHeight;
+
+                if (
+                    scrollPosition >= sectionTop &&
+                    scrollPosition <
+                    sectionTop + sectionHeight
+                ) {
+
+                    currentSection =
+                        section.getAttribute("id");
+
+                }
+
+            });
+
+            sectionLinks.forEach(link => {
+
+                link.classList.remove("active");
+
+                const href =
+                    link.getAttribute("href");
+
+                if (
+                    currentSection &&
+                    href === `#${currentSection}`
+                ) {
+
+                    link.classList.add("active");
+
+                }
+
+            });
+
+        };
+
+        updateActiveNavigation();
+
+        window.addEventListener(
+            "scroll",
+            updateActiveNavigation,
+            { passive: true }
+        );
+
+    }
 
 
-        const dashboardObserver =
+    /* =====================================================
+       5. SCROLL REVEAL ANIMATION
+       ===================================================== */
+
+    const revealElements = document.querySelectorAll(
+        ".service-block, " +
+        ".marketplace-card, " +
+        ".industry-item, " +
+        ".process-item, " +
+        ".work-card"
+    );
+
+    if (
+        revealElements.length &&
+        "IntersectionObserver" in window
+    ) {
+
+        revealElements.forEach(element => {
+
+            element.style.opacity = "0";
+            element.style.transform = "translateY(20px)";
+            element.style.transition =
+                "opacity 0.6s ease, transform 0.6s ease";
+
+        });
+
+
+        const revealObserver =
             new IntersectionObserver(
-                (entries) => {
+                entries => {
 
-                    if (
-                        counterStarted
-                    ) {
+                    entries.forEach(entry => {
 
-                        return;
-
-                    }
-
-
-                    entries.forEach(
-                        (entry) => {
-
-                            if (
-                                !entry.isIntersecting
-                            ) {
-
-                                return;
-
-                            }
-
-
-                            counterStarted =
-                                true;
-
-
-                            /*
-                             * First dashboard
-                             * metric = 04
-                             */
-
-                            animateNumber(
-                                counterElements[0],
-                                4
-                            );
-
-
-                            dashboardObserver.disconnect();
-
+                        if (!entry.isIntersecting) {
+                            return;
                         }
-                    );
+
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform =
+                            "translateY(0)";
+
+                        revealObserver.unobserve(
+                            entry.target
+                        );
+
+                    });
 
                 },
                 {
-                    threshold: 0.4
+                    threshold: 0.12
                 }
             );
 
 
-        dashboardObserver.observe(
-            dashboard
-        );
+        revealElements.forEach(element => {
+
+            revealObserver.observe(element);
+
+        });
 
     }
 
 
     /* =====================================================
-       BUTTON RIPPLE EFFECT
-    ===================================================== */
-
-    const buttons =
-        document.querySelectorAll(
-            ".btn"
-        );
-
-
-    buttons.forEach(
-        (button) => {
-
-            button.addEventListener(
-                "click",
-                function (event) {
-
-                    const ripple =
-                        document.createElement(
-                            "span"
-                        );
-
-
-                    const rect =
-                        this.getBoundingClientRect();
-
-
-                    const size =
-                        Math.max(
-                            rect.width,
-                            rect.height
-                        );
-
-
-                    ripple.style.width =
-                        `${size}px`;
-
-                    ripple.style.height =
-                        `${size}px`;
-
-                    ripple.style.position =
-                        "absolute";
-
-                    ripple.style.left =
-                        `${event.clientX - rect.left - size / 2}px`;
-
-                    ripple.style.top =
-                        `${event.clientY - rect.top - size / 2}px`;
-
-                    ripple.style.borderRadius =
-                        "50%";
-
-                    ripple.style.background =
-                        "rgba(255,255,255,.22)";
-
-                    ripple.style.pointerEvents =
-                        "none";
-
-                    ripple.style.transform =
-                        "scale(0)";
-
-                    ripple.style.animation =
-                        "buttonRipple .6s ease-out";
-
-
-                    const computed =
-                        window.getComputedStyle(
-                            this
-                        );
-
-
-                    if (
-                        computed.position ===
-                        "static"
-                    ) {
-
-                        this.style.position =
-                            "relative";
-
-                    }
-
-
-                    this.style.overflow =
-                        "hidden";
-
-
-                    this.appendChild(
-                        ripple
-                    );
-
-
-                    setTimeout(
-                        () => {
-
-                            ripple.remove();
-
-                        },
-                        650
-                    );
-
-                }
-            );
-
-        }
-    );
-
-
-    /* =====================================================
-       CLOSE MENU ON RESIZE
-    ===================================================== */
-
-    window.addEventListener(
-        "resize",
-        () => {
-
-            if (
-                window.innerWidth > 850
-            ) {
-
-                closeMobileMenu();
-
-            }
-
-        }
-    );
-
-
-    /* =====================================================
-       CURRENT YEAR
-    ===================================================== */
+       6. CURRENT YEAR
+       ===================================================== */
 
     const yearElements =
-        document.querySelectorAll(
-            "[data-current-year]"
-        );
+        document.querySelectorAll("[data-year]");
 
+    if (yearElements.length) {
 
-    yearElements.forEach(
-        (element) => {
+        const currentYear =
+            new Date().getFullYear();
 
-            element.textContent =
-                new Date()
-                    .getFullYear();
+        yearElements.forEach(element => {
 
-        }
-    );
+            element.textContent = currentYear;
+
+        });
+
+    }
 
 
     /* =====================================================
-       EXTERNAL LINK SAFETY
-    ===================================================== */
+       7. EXTERNAL LINKS
+       ===================================================== */
 
     const externalLinks =
         document.querySelectorAll(
-            'a[target="_blank"]'
+            'a[href^="http"]'
         );
 
+    externalLinks.forEach(link => {
 
-    externalLinks.forEach(
-        (link) => {
+        const currentHost =
+            window.location.hostname;
 
-            link.setAttribute(
-                "rel",
-                "noopener noreferrer"
-            );
+        try {
+
+            const linkUrl =
+                new URL(link.href);
+
+            if (
+                linkUrl.hostname !== currentHost
+            ) {
+
+                link.setAttribute(
+                    "target",
+                    "_blank"
+                );
+
+                link.setAttribute(
+                    "rel",
+                    "noopener noreferrer"
+                );
+
+            }
+
+        } catch (error) {
+
+            // Ignore invalid URLs.
 
         }
-    );
+
+    });
 
 
     /* =====================================================
-       REDUCE MOTION SUPPORT
-    ===================================================== */
+       8. CONSOLE MESSAGE
+       ===================================================== */
 
-    const prefersReducedMotion =
-        window.matchMedia(
-            "(prefers-reduced-motion: reduce)"
-        ).matches;
-
-
-    if (
-        prefersReducedMotion
-    ) {
-
-        document.documentElement
-            .classList.add(
-                "reduce-motion"
-            );
-
-    }
-
-
-    /* =====================================================
-       PAGE READY
-    ===================================================== */
-
-    document.body.classList.add(
-        "page-ready"
+    console.log(
+        "B2B Help website loaded successfully."
     );
 
 });
