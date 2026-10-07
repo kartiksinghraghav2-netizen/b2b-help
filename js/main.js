@@ -301,7 +301,122 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       6. CURRENT YEAR
+       6. PREMIUM MOTION
+       ===================================================== */
+
+    const prefersReducedMotion =
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!prefersReducedMotion) {
+
+        /* Staggered scroll reveals */
+        const motionElements = document.querySelectorAll(
+            ".intro-copy, " +
+            ".intro-statement, " +
+            ".capability-item, " +
+            ".section-heading, " +
+            ".marketplace-header, " +
+            ".process-header, " +
+            ".work-header, " +
+            ".cta-box"
+        );
+
+        if (motionElements.length && "IntersectionObserver" in window) {
+
+            motionElements.forEach((element, index) => {
+                element.classList.add("motion-reveal");
+                element.style.setProperty(
+                    "--motion-delay",
+                    `${Math.min(index % 3, 2) * 90}ms`
+                );
+            });
+
+            const motionObserver = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (!entry.isIntersecting) return;
+
+                        entry.target.classList.add("motion-visible");
+                        motionObserver.unobserve(entry.target);
+                    });
+                },
+                { threshold: 0.12 }
+            );
+
+            motionElements.forEach(element => motionObserver.observe(element));
+        }
+
+        /* Subtle hero image parallax */
+        const heroVisual = document.querySelector(".hero-image-visual");
+
+        if (heroVisual && window.matchMedia("(pointer: fine)").matches) {
+
+            heroVisual.addEventListener("pointermove", event => {
+
+                const rect = heroVisual.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width - 0.5;
+                const y = (event.clientY - rect.top) / rect.height - 0.5;
+
+                heroVisual.style.setProperty("--parallax-x", `${x * 10}px`);
+                heroVisual.style.setProperty("--parallax-y", `${y * 7}px`);
+
+            });
+
+            heroVisual.addEventListener("pointerleave", () => {
+                heroVisual.style.setProperty("--parallax-x", "0px");
+                heroVisual.style.setProperty("--parallax-y", "0px");
+            });
+        }
+
+        /* Magnetic interaction for primary CTAs */
+        const magneticButtons = document.querySelectorAll(
+            ".btn-primary, .nav-button, .btn-white"
+        );
+
+        magneticButtons.forEach(button => {
+
+            button.addEventListener("pointermove", event => {
+
+                const rect = button.getBoundingClientRect();
+                const x = event.clientX - rect.left - rect.width / 2;
+                const y = event.clientY - rect.top - rect.height / 2;
+
+                button.style.transform =
+                    `translate(${x * 0.08}px, ${y * 0.12}px)`;
+
+            });
+
+            button.addEventListener("pointerleave", () => {
+                button.style.transform = "";
+            });
+        });
+
+        /* Scroll progress indicator */
+        const progress = document.createElement("div");
+        progress.className = "scroll-progress";
+        document.body.appendChild(progress);
+
+        const updateProgress = () => {
+
+            const scrollable =
+                document.documentElement.scrollHeight - window.innerHeight;
+
+            const percentage =
+                scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+
+            progress.style.width = `${percentage}%`;
+        };
+
+        updateProgress();
+
+        window.addEventListener("scroll", updateProgress, { passive: true });
+        window.addEventListener("resize", updateProgress);
+
+    }
+
+
+    /* =====================================================
+       7. CURRENT YEAR
        ===================================================== */
 
     const yearElements =
